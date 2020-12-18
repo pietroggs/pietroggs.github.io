@@ -275,7 +275,7 @@ embed {
     height: 60px;
     background-image: url(../../img/close.PNG);
     cursor: pointer;
-    z-index: 5;
+    z-index: 7;
 }
 
 /* Audio */
@@ -299,5 +299,5 @@ audio::-webkit-media-controls-enclosure {
     height: 80px;
     background-image: url(../../img/close.PNG);
     cursor: pointer;
-    z-index: 5;
+    z-index: 7;
 }
