@@ -23,9 +23,6 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: hsla(265, 29%, 61%, 100%);
-    ;
-
-
 }
 
 #container {
@@ -35,7 +32,7 @@ body {
     top: 0px;
     left: 0px;
     overflow: hidden;
-    background-color: transparent;
+    background-color: rgba(183, 184, 127, 0.301);
 }
 
 .card {
@@ -60,27 +57,6 @@ body {
 .hide {
     display: none;
 }
-
-/* 
-@font-face {
-    font-family: "gBold";
-    src: url("../fonts/GothamBold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "gBook";
-    src: url("../fonts/GothamBook.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "gMed";
-    src: url("../fonts/GothamMedium.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "gLite";
-    src: url("../fonts/GothamLight.otf") format("opentype");
-} */
 
 #quitText {
     position: absolute;
@@ -136,92 +112,6 @@ body {
 
 #preload_images {
     display: none;
-}
-
-/* Prelaod anim */
-.lds-grid {
-    display: inline-block;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    transform: translate(-50%, -50%) scale(3);
-}
-
-.lds-grid div {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #fff;
-    animation: lds-grid 1.2s linear infinite;
-}
-
-.lds-grid div:nth-child(1) {
-    top: 8px;
-    left: 8px;
-    animation-delay: 0s;
-}
-
-.lds-grid div:nth-child(2) {
-    top: 8px;
-    left: 32px;
-    animation-delay: -0.4s;
-}
-
-.lds-grid div:nth-child(3) {
-    top: 8px;
-    left: 56px;
-    animation-delay: -0.8s;
-}
-
-.lds-grid div:nth-child(4) {
-    top: 32px;
-    left: 8px;
-    animation-delay: -0.4s;
-}
-
-.lds-grid div:nth-child(5) {
-    top: 32px;
-    left: 32px;
-    animation-delay: -0.8s;
-}
-
-.lds-grid div:nth-child(6) {
-    top: 32px;
-    left: 56px;
-    animation-delay: -1.2s;
-}
-
-.lds-grid div:nth-child(7) {
-    top: 56px;
-    left: 8px;
-    animation-delay: -0.8s;
-}
-
-.lds-grid div:nth-child(8) {
-    top: 56px;
-    left: 32px;
-    animation-delay: -1.2s;
-}
-
-.lds-grid div:nth-child(9) {
-    top: 56px;
-    left: 56px;
-    animation-delay: -1.6s;
-}
-
-@keyframes lds-grid {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
 }
 
 .scaleText {
