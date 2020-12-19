@@ -15,7 +15,9 @@ var cardDebug = false;
 
 function init() {
     log("Init main.js");
-    createContainer(initCourse);
+    setTimeout(function () {
+        createContainer(initCourse);
+    }, 3000);
     // Aqui vai o preloader
 }
 
@@ -84,8 +86,8 @@ function calcScale() {
     //     pivHeight = window.innerHeight / container_height;
     // }
 
-        pivWidth = window.innerWidth / container_width;
-        pivHeight = window.innerHeight / container_height;
+    pivWidth = window.innerWidth / container_width;
+    pivHeight = window.innerHeight / container_height;
 
     pivWidth = pivWidth.toFixed(3);
     pivHeight = pivHeight.toFixed(3);
@@ -102,7 +104,6 @@ function calcScale() {
     } catch (err) {
 
     }
-    setInterval(calcScale, 500);
 }
 
 //#endregion
