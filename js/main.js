@@ -15,10 +15,12 @@ var cardDebug = false;
 
 function init() {
     log("Init main.js");
-    setTimeout(function () {
-        createContainer(initCourse);
-    }, 3000);
+    // createContainer(initCourse);
     // Aqui vai o preloader
+    setInterval(() => {
+        let screenFix = document.querySelector('#screenFix');
+        document.querySelector('#scale3').innerHTML = `screenFix: W:${screenFix.clientWidth} H:${screenFix.clientHeight}`;
+    }, 500);
 }
 
 //#region Container
