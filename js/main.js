@@ -65,6 +65,9 @@ function calcScale() {
             window.addEventListener("orientationchange", function () {
                 calcScale();
             });
+            window.addEventListener("scroll", function () {
+                calcScale();
+            });
         }, 500);
     }
 
