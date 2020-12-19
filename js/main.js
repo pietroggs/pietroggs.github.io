@@ -3,6 +3,12 @@ var container;
 var body;
 var isMobile = false;
 
+// Scale Config
+var container_width = 1366;
+var container_height = 769;
+// Em % (ex: 10%)
+var margin = 10;
+
 // Debug
 var cardDebug = false;
 
@@ -19,6 +25,8 @@ function createContainer(callback) {
     body = document.querySelector('body');
     // Container
     container = document.querySelector('#container');
+    container.style.width = (`${container_width}px`);
+    container.style.height = (`${container_height}px`);
     // Listener
     calcScale();
     return callback();
@@ -46,7 +54,7 @@ function initCourse() {
 var initScale = true;
 
 function calcScale() {
-    mobileAndTabletCheck();
+    // mobileAndTabletCheck();
     if (initScale) {
         initScale = false;
         setTimeout(function () {
@@ -64,32 +72,30 @@ function calcScale() {
 
     // Screen é pra mobile
     // Windows é pra desktop
-
     let pivWidth;
     let pivHeight;
-    let margin = 0.05;
 
     if (isMobile) {
-        pivWidth = screen.width / 1920;
-        pivHeight = screen.height / 1080;
+        pivWidth = screen.width / container_width;
+        pivHeight = screen.height / container_height;
     }
     else {
-        pivWidth = window.innerWidth / 1920;
-        pivHeight = window.innerHeight / 1080;
+        pivWidth = window.innerWidth / container_width;
+        pivHeight = window.innerHeight / container_height;
     }
-    var pivScale;
-    if (pivWidth > pivHeight) {
-        pivScale = pivHeight;
-    } else {
-        pivScale = pivWidth;
-    }
-    pivScale = (pivScale * (1 - margin));
-    pivScale = pivScale.toFixed(3);
+
+    pivWidth = pivWidth.toFixed(3);
+    pivHeight = pivHeight.toFixed(3);
+
+    console.log(`Calc Scale: Width - ${pivWidth} | Height ${pivHeight}`);
+
+    let pivScale = pivHeight > pivWidth ? pivWidth : pivHeight;
+    pivScale = pivScale - (margin / 100);
+
     try {
-        var cont = document.querySelector("#container");
-        cont.style.setProperty('transform', 'translate(-50%, -50%) scale(' + pivScale + ')');
-        cont.style.setProperty('top', '50%');
-        cont.style.setProperty('left', '50%');
+        container.style.transform = (`translate(-50%, -50%) scale(${pivScale})`);
+        container.style.top = '50%';
+        container.style.left = '50%';
     } catch (err) {
 
     }
