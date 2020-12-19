@@ -54,7 +54,7 @@ function initCourse() {
 var initScale = true;
 
 function calcScale() {
-    // mobileAndTabletCheck();
+    mobileAndTabletCheck();
     if (initScale) {
         initScale = false;
         setTimeout(function () {
@@ -75,14 +75,17 @@ function calcScale() {
     let pivWidth;
     let pivHeight;
 
-    if (isMobile) {
-        pivWidth = screen.width / container_width;
-        pivHeight = screen.height / container_height;
-    }
-    else {
+    // if (isMobile) {
+    //     pivWidth = screen.width / container_width;
+    //     pivHeight = screen.height / container_height;
+    // }
+    // else {
+    //     pivWidth = window.innerWidth / container_width;
+    //     pivHeight = window.innerHeight / container_height;
+    // }
+
         pivWidth = window.innerWidth / container_width;
         pivHeight = window.innerHeight / container_height;
-    }
 
     pivWidth = pivWidth.toFixed(3);
     pivHeight = pivHeight.toFixed(3);
@@ -99,6 +102,7 @@ function calcScale() {
     } catch (err) {
 
     }
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
 //#endregion
