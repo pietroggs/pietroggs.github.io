@@ -4,6 +4,7 @@ var body;
 var isMobile = false;
 
 // Scale Config
+var screenFix = document.querySelector('#screenFix');
 var container_width = 1366;
 var container_height = 769;
 // Em % (ex: 10%)
@@ -15,12 +16,8 @@ var cardDebug = false;
 
 function init() {
     log("Init main.js");
-    // createContainer(initCourse);
+    createContainer(initCourse);
     // Aqui vai o preloader
-    setInterval(() => {
-        let screenFix = document.querySelector('#screenFix');
-        document.querySelector('#scale3').innerHTML = `screenFix: W:${screenFix.clientWidth} H:${screenFix.clientHeight}`;
-    }, 500);
 }
 
 //#region Container
@@ -70,26 +67,14 @@ function calcScale() {
             });
         }, 500);
     }
-    // DEBUG
-    document.querySelector('#scale1').innerHTML = `Window: W:${window.innerWidth} H:${window.innerHeight}`;
-    document.querySelector('#scale2').innerHTML = `Screen: W:${screen.width} H:${screen.height}`;
 
-    // Screen é pra mobile
-    // Windows é pra desktop
+    console.log(`ScreenFix: W: ${screenFix.clientWidth} H: ${screenFix.clientHeight}`);
+
     let pivWidth;
     let pivHeight;
 
-    // if (isMobile) {
-    //     pivWidth = screen.width / container_width;
-    //     pivHeight = screen.height / container_height;
-    // }
-    // else {
-    //     pivWidth = window.innerWidth / container_width;
-    //     pivHeight = window.innerHeight / container_height;
-    // }
-
-    pivWidth = window.innerWidth / container_width;
-    pivHeight = window.innerHeight / container_height;
+    pivWidth = screenFix.clientWidth / container_width;
+    pivHeight = screenFix.clientHeight / container_height;
 
     pivWidth = pivWidth.toFixed(3);
     pivHeight = pivHeight.toFixed(3);

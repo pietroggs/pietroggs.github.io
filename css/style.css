@@ -27,6 +27,7 @@ body {
     background-size: cover;
     background-position: center;
     background-color: transparent;
+    z-index: 0;
 }
 
 #container {
@@ -35,12 +36,14 @@ body {
     height: 0px;
     overflow: hidden;
     background-color: transparent;
+    z-index: 1;
 }
 
 #screenFix{
     width: 100%;
     height: 100%;
-    background-color: yellow;
+    background-color: transparent;
+    z-index: 0;
 }
 
 /* #container {
@@ -134,7 +137,7 @@ body {
     display: none;
 }
 
-.scaleText {
+/* .scaleText {
     position: absolute;
     font-size: 22px;
     color: blue;
@@ -152,7 +155,8 @@ body {
     top: 50%;
     left: 50%;
     font-size: 32px;
-}
+} */
+
 /* Popup */
 
 .pop_lock {
