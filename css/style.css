@@ -137,7 +137,7 @@ body {
 .scaleText {
     position: absolute;
     font-size: 22px;
-    color: red;
+    color: blue;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 9999999999;
 }
