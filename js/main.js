@@ -102,7 +102,7 @@ function calcScale() {
     } catch (err) {
 
     }
-    window.scrollTo(0, document.body.scrollHeight);
+    setInterval(calcScale, 500);
 }
 
 //#endregion
