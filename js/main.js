@@ -1,4 +1,4 @@
-var card = 0;
+var card = '4_1';
 var container;
 var body;
 var isMobile = false;
@@ -45,14 +45,14 @@ function closeContainer() {
 function initCourse() {
     log("Iniciando Curso");
     // Chamando Primeiro Card
-    // insertCard(card);
+    cardChange(card);
     create('', 'body', 'turn', 'divImg');
 }
 
 //#region Config
 
 // Scale
-var initScale = true;
+var initScale = false;
 
 function calcScale() {
     mobileAndTabletCheck();
@@ -65,13 +65,8 @@ function calcScale() {
             window.addEventListener("orientationchange", function () {
                 calcScale();
             });
-            window.addEventListener("scroll", function () {
-                calcScale();
-            });
         }, 500);
     }
-
-    console.log(`ScreenFix: W: ${screenFix.clientWidth} H: ${screenFix.clientHeight}`);
 
     let pivWidth;
     let pivHeight;
@@ -106,14 +101,29 @@ function cardChange(arg_card) {
     if (multlock) {
         multlock = false;
         try {
-            var atCard = document.querySelector('.card');
-            container.removeChild(atCard);
+            let frame_check = document.querySelector('iframe');
+            if (frame_check) {
+                container.removeChild(frame_check);
+            }
         } catch (e) {
-            // log(`Não há cards no container Card[${card}]`);
+            console.log(`Falha ao troca iframe${e}`)
         }
         card = arg_card;
-        insertCard(card);
+
+        let new_frame = document.createElement('iframe');
+        new_frame.src = (`telas/card${arg_card}`);
+        new_frame.frameBorder = '0';
+        new_frame.width = '100%';
+        new_frame.height = '100%';
+        container.appendChild(new_frame);
+        setTimeout(() => { multlock = true }, 500);
     }
+}
+
+function insertCard(card) {
+    // Checking Preview iFrame
+
+    // Input new frame
 }
 //#endregion
 

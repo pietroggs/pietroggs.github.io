@@ -21,7 +21,7 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-image: url(../img/BG.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,22 +39,16 @@ body {
     z-index: 1;
 }
 
-#screenFix{
+iframe{
+    overflow: hidden;
+}
+
+#screenFix {
     width: 100%;
     height: 100%;
     background-color: transparent;
     z-index: 0;
 }
-
-/* #container {
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    background-color: transparent;
-} */
 
 .card {
     width: 100%;
@@ -105,7 +99,7 @@ body {
 
 /* Animação */
 
-@media all and (orientation:portrait) {
+@media screen and (orientation:portrait) {
     #container {
         visibility: hidden;
     }
@@ -137,88 +131,117 @@ body {
     display: none;
 }
 
-/* .scaleText {
-    position: absolute;
-    font-size: 22px;
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 9999999999;
-}
+/* NAV BTNS */
 
-#scale2 {
-    margin-top: 22px;
-}
-
-#scale3 {
+.nav_btns {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    font-size: 32px;
-} */
-
-/* Popup */
-
-.pop_lock {
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-}
-
-.pop_mask {
-    top: 50%;
-    left: 50%;
-    width: 120%;
-    height: 120%;
-    z-index: 3;
-    background-color: rgba(151, 127, 184, 0.9);
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-}
-
-/* PDF */
-
-embed {
-    top: 50%;
-    left: 50%;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-#close_btn {
-    top: 8%;
-    left: 97%;
-    width: 60px;
-    height: 60px;
-    background-image: url(../../img/close.PNG);
     cursor: pointer;
-    z-index: 7;
+    transition: .25s;
 }
 
-/* Audio */
+.nav_btns * {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
 
-audio {
+/* HOME BTN */
+#home_btn {
+    top: 35px;
+    left: 32px;
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/btn_home_bg.png);
+}
+
+#home_ico {
+    top: 48%;
+    left: 48%;
+    width: 32px;
+    height: 27px;
+    background-image: url(../img/btn_home_ico.png);
+}
+
+#home_btn:hover {
+    background-image: url(../img/btn_home_bg_hover.png);
+}
+
+#home_btn:hover #home_ico {
+    animation: home_btn_anim 0.5s infinite;
+    background-image: url(../img/btn_home_ico_hover.png);
+}
+
+@keyframes home_btn_anim {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(5deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+/* BACK BTN */
+#back_btn {
+    top: 35px;
+    left: 82px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/btn_home_bg.png);
+}
+
+#back_ico {
     top: 50%;
-    left: 50%;
-    width: 23%;
-    transform: translate(-50%, -50%) scale(1.5) !important;
-    z-index: 5;
+    left: 68%;
+    width: 39px;
+    height: 21px;
+    background-image: url(../img/btn_back_ico.png);
 }
 
-audio::-webkit-media-controls-enclosure {
-    border-radius: 0;
+#back_btn:hover {
+    background-image: url(../img/btn_back_bg_hover.png);
 }
 
-#close_btn_podcast {
-    top: 41%;
-    left: 67%;
-    width: 80px;
-    height: 80px;
-    background-image: url(../../img/close.PNG);
-    cursor: pointer;
-    z-index: 7;
+#back_btn:hover #back_ico {
+    animation: back_btn_anim 0.5s infinite;
+    background-image: url(../img/btn_back_ico_hover.png);
+}
+
+@keyframes back_btn_anim {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 68%;
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(10deg);
+        left: 72%;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 68%;
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(-10deg);
+        left: 64%;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 68%;
+    }
 }
