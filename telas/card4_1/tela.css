@@ -1,0 +1,244 @@
+/* card4_1 */
+
+.card {
+    background-image: url(../../../img/interacoes/bg.png);
+    background-color: white;
+}
+
+#txt_title_name {
+    top: 11%;
+    left: 7%;
+    width: 10%;
+    font-size: 24px;
+    color: #2063AC;
+    font-family: londrina, Arial, Helvetica, sans-serif;
+}
+
+#title_txt {
+    top: 17%;
+    left: 9%;
+    width: 15%;
+    height: 9%;
+    background-image: url(../../../img/interacoes/1/title_bg.png);
+    background-size: auto;
+    z-index: 2;
+}
+
+#title_txt span {
+    top: 50%;
+    left: 64%;
+    width: 120%;
+    font-size: 48px;
+    color: #977FB8;
+    font-family: londrina, Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+#txt1 {
+    top: 28%;
+    left: 12.6%;
+    width: 19%;
+    height: 19%;
+}
+
+#txt1 img {
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+}
+
+#txt1 .box {
+    top: 46%;
+    left: 54%;
+}
+
+#txt1 span {
+    top: 46%;
+    left: 54%;
+    width: 72%;
+    text-align: left;
+    font-size: 18px;
+    color: #2063AC;
+    font-family: cabin, Arial, Helvetica, sans-serif;
+}
+
+#txt2 {
+    top: 78%;
+    left: 12%;
+    color: #1B5798;
+    font-size: 48px;
+    font-family: londrina, Arial, Helvetica, sans-serif;
+}
+
+#txt2_box {
+    top: 560px;
+    left: 13%;
+    max-width: 100%;
+}
+
+#txt2_like {
+    top: 521px;
+    left: 186px;
+    max-width: 100%;
+}
+
+#txt2_like2 {
+    top: 574px;
+    left: 207px;
+    max-width: 100%;
+}
+
+/* BTN1 */
+
+#btn1 {
+    top: 90%;
+    left: 12%;
+    width: 19.5%;
+    height: 9%;
+    background-image: url(../../../img/interacoes/bt1_bg.png);
+    background-size: auto;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#btn1 p {
+    top: 50%;
+    width: 70%;
+    left: 44%;
+    font-size: 24px;
+    color: #977FB8;
+    font-family: londrina, Arial, Helvetica, sans-serif;
+}
+
+#btn1 img {
+    top: 50%;
+    left: 83%;
+    max-width: 100%;
+}
+
+#btn1:hover {
+    background-image: url(../../../img/interacoes/bt1_bg_roxo.png);
+}
+
+#btn1:hover p {
+    color: #FFD62B;
+}
+
+#btn1:hover img {
+    content: url(../../../img/seta_amarela.png);
+}
+
+/* VIDEO */
+#video_holder {
+    transform: none;
+    width: 950px;
+    height: 533px;
+    left: 395px;
+    top: 20px;
+    background-image: url(../../../img/interacoes/videoHolder.png);
+}
+
+/* BOTTOM BTNS */
+
+.bottom_btn {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.bottom_btn span {
+    top: 50%;
+    width: 70%;
+    left: 52%;
+    font-size: 24px;
+    color: #FFD62B;
+    font-family: londrina, Arial, Helvetica, sans-serif;
+}
+
+/* BTN2 */
+
+#bt_box_2 {
+    top: 87.5%;
+    left: 87.5%;
+    width: 66px;
+    height: 80px;
+    background-image: url(../../../img/interacoes/bt_box.png);
+}
+
+#bt_box_2 img {
+    top: 48%;
+    left: 45%;
+    /* max-width: 100%; */
+}
+
+#btn_bt_2 {
+    top: 90%;
+    left: 93.8%;
+    width: 132px;
+    height: 68px;
+    background-image: url(../../../img/interacoes/btn_bt_bg.png);
+    cursor: pointer;
+}
+
+#bt_seta2 {
+    top: 50%;
+    left: 74%;
+    max-width: 100%;
+}
+
+#btn_bt_2:hover {
+    background-image: url(../../../img/interacoes/btn_bt_bg2.png);
+}
+
+#btn_bt_2:hover #bt_seta2 {
+    content: url(../../../img/seta_roxa.png);
+}
+
+#btn_bt_2:hover span {
+    color: #977FB8;
+}
+
+/* BTN1 */
+
+#bt_box_1 {
+    top: 87.5%;
+    left: 70.5%;
+    width: 66px;
+    height: 80px;
+    background-image: url(../../../img/interacoes/bt_box.png);
+}
+
+#bt_box_1 img {
+    top: 48%;
+    left: 48%;
+    max-width: 100%;
+}
+
+#btn_bt_1 {
+    top: 90%;
+    left: 76.8%;
+    width: 132px;
+    height: 68px;
+    background-image: url(../../../img/interacoes/btn_bt_bg.png);
+    cursor: pointer;
+}
+
+#bt_seta1 {
+    top: 50%;
+    left: 74%;
+    max-width: 100%;
+}
+
+#btn_bt_1:hover {
+    background-image: url(../../../img/interacoes/btn_bt_bg2.png);
+}
+
+#btn_bt_1:hover #bt_seta1 {
+    content: url(../../../img/seta_roxa.png);
+}
+
+#btn_bt_1:hover span {
+    color: #977FB8;
+}

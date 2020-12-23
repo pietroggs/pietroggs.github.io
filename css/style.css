@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    /* No text select */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    z-index: 0;
+}
+
+#container {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 1;
+}
+
+iframe{
+    overflow: hidden;
+}
+
+#screenFix {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.card * {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.divImg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+}
+
+.hide {
+    display: none;
+}
+
+#quitText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    font-family: gBold, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+#turn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 40vh;
+    height: 40vh;
+    background-image: url(../img/rotatedevice.gif);
+    visibility: hidden;
+}
+
+/* Animação */
+
+@media screen and (orientation:portrait) {
+    #container {
+        visibility: hidden;
+    }
+
+    #turn {
+        visibility: visible;
+    }
+}
+
+/* Preloader Things */
+
+#preload_content {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/preload_bg.png);
+}
+
+#txt_load {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 68%;
+    left: 50%;
+    color: white;
+    font-family: gLite, Helvetica, sans-serif;
+    font-size: 56px;
+}
+
+#preload_images {
+    display: none;
+}
+
+/* NAV BTNS */
+
+.nav_btns {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: .25s;
+}
+
+.nav_btns * {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* HOME BTN */
+#home_btn {
+    top: 35px;
+    left: 32px;
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/btn_home_bg.png);
+}
+
+#home_ico {
+    top: 48%;
+    left: 48%;
+    width: 32px;
+    height: 27px;
+    background-image: url(../img/btn_home_ico.png);
+}
+
+#home_btn:hover {
+    background-image: url(../img/btn_home_bg_hover.png);
+}
+
+#home_btn:hover #home_ico {
+    animation: home_btn_anim 0.5s infinite;
+    background-image: url(../img/btn_home_ico_hover.png);
+}
+
+@keyframes home_btn_anim {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(5deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+/* BACK BTN */
+#back_btn {
+    top: 35px;
+    left: 82px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/btn_home_bg.png);
+}
+
+#back_ico {
+    top: 50%;
+    left: 68%;
+    width: 39px;
+    height: 21px;
+    background-image: url(../img/btn_back_ico.png);
+}
+
+#back_btn:hover {
+    background-image: url(../img/btn_back_bg_hover.png);
+}
+
+#back_btn:hover #back_ico {
+    animation: back_btn_anim 0.5s infinite;
+    background-image: url(../img/btn_back_ico_hover.png);
+}
+
+@keyframes back_btn_anim {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 68%;
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(10deg);
+        left: 72%;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 68%;
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(-10deg);
+        left: 64%;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        left: 68%;
+    }
+}
