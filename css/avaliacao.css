@@ -1,0 +1,80 @@
+#card5 {
+    background-image: url(../img/avaliacao/fundo.png);
+    background-color: #fff;
+}
+
+#card5 .titles {
+    text-align: left;
+    font-family: londrinaBold, Helvetica, sans-serif;
+}
+
+#card5 #txt1 {
+    top: 22.8%;
+    left: 8%;
+    width: 11%;
+    font-size: 32px;
+    letter-spacing: .05em;
+    color: #fff;
+}
+
+#card5 #txt2 {
+    top: 27.7%;
+    left: 15.1%;
+    width: 25%;
+    font-size: 64px;
+    color: #FFD62B;
+}
+
+#card5 #box01 {
+    top: 28%;
+    left: 14%;
+    height: 9%;
+    width: 23%;
+    background-image: url(img/img01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card5 #box02 {
+    top: 59%;
+    left: 13%;
+    background-image: url(img/img02.png);
+}
+
+#card5 #box03 {
+    top: 57%;
+    left: 14%;
+    background-image: url(img/img03.png);
+}
+
+#card5 .boxesTxt {
+    height: 44%;
+    width: 22%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card5 .txt {
+    width: 19%;
+    font-size: 25px;
+    text-align: left;
+    font-family: cabinRegular, Helvetica, sans-serif;
+    color: #2063AC;
+}
+
+#card5 #txt3 {
+    top: 47.5%;
+    left: 14.5%;
+}
+
+#card5 #txt4 {
+    top: 65.5%;
+    left: 14.15%;
+}
+
+#card5 .boxes {
+    left: 64.2%;
+    height: 11%;
+    width: 61%;
+    /* background-color: darkseagreen; */
+}

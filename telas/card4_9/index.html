@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="../cardconfig.css">
+<link rel="stylesheet" href="tela.css">
+
+<body class='9'>
+    <p id="txt_title_name">Interação 9</p>
+    <div id="title_txt" class="divImg">
+        <span>Hora da decisão!?</span>
+    </div>
+    <div id="card4_1" class="card">
+        <!-- Tela -->
+        <div id="txt1">
+            <img src="../../img/interacoes/9/txt_bg1.png" alt="">
+            <img src="../../img/interacoes/9/txt_bg2.png" alt="" class="box">
+            <span>Fim da jornada? Este é o momento de refletirmos sobre as decisões que tomaremos no Ensino Médio.</span>
+        </div>
+        <p id="txt2">
+            <span id='sp1'>E ai?</span>
+            <span>O que achou?</span>
+        </p>
+        <img src="../../img/interacoes/txt2_box.png" alt="" id="txt2_box">
+        <img src="../../img/interacoes/txt2_like.png" alt="" id="txt2_like">
+        <img src="../../img/interacoes/txt2_like2.png" alt="" id="txt2_like2">
+        <div id="btn1" class="divImg" onclick="parent.cardChange('5')">
+            <p>Mapa de interesses</p>
+            <div class="seta_btn"></div>
+        </div>
+        <video src="../../assets/video/Episodio 09.mp4" controls='true'
+            poster="../../../img/interacoes/videoHolder.png"></video>
+
+        <!-- btns bottom -->
+        <div id="btn_bt_1" class="bottom_btn" onclick="createPodcast('28%','33%')">
+            <span>Ouça</span>
+            <div class="seta_btn"></div>
+        </div>
+        <div id="bt_box_1" class="bottom_btn">
+            <img src="../../img/interacoes/podcast.png" alt="">
+        </div>
+        <div id="btn_bt_2" class="bottom_btn2" onclick="createPdf()">
+            <span>Leia</span>
+            <div class="seta_btn"></div>
+        </div>
+        <div id="bt_box_2" class="bottom_btn2">
+            <img src="../../img/interacoes/ereader.png" alt="">
+        </div>
+    </div>
+</body>
+
+<script src="../../js/libs/TweenMax.js"></script>
+<script src="../../js/libs/EasePack.min.js"></script>
+<script src="../../js/libs/pi.js"></script>
+<script src="../utils.js"></script>
+<script src="../../js/libs/jquery_min.js"></script>
+<script src="tela.js"></script>
