@@ -1,7 +1,7 @@
 /* card6 */
 
 .card {
-    background-image: url(../../../img/final/bg.png);
+    background-image: url(../../img/final/bg.svg);
     background-color: #fff;
 }
 
@@ -25,7 +25,7 @@
     height: 20%;
     width: 32%;
     z-index: 1;
-    background-image: url(../../../img/final/img01.png);
+    background-image: url(../../img/final/img01.svg);
 }
 
 .txt {
@@ -47,7 +47,7 @@
     height: 16%;
     width: 23.5%;
     z-index: 0;
-    background-image: url(../../../img/final/img02.png);
+    background-image: url(../../img/final/img02.svg);
 }
 
 .big_boxes {
@@ -158,7 +158,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-image: url(../../../img/final/box_pequeno_categorias.png);
+    background-image: url(../../img/final/box_pequeno_categorias.svg);
 }
 
 #bg_box02 {
@@ -176,27 +176,27 @@
     width: 98%;
     height: 100%;
     z-index: 0;
-    background-image: url(../../../img/final/box_grande_categorias.png);
+    background-image: url(../../img/final/box_grande_categorias.svg);
 }
 
 #icon01 {
-    background-image: url(../../../img/final/icon01.png);
+    background-image: url(../../img/final/icon01.svg);
 }
 
 #icon02 {
     top: 45%;
     left: 14%;
-    background-image: url(../../../img/final/icon02.png);
+    background-image: url(../../img/final/icon02.svg);
 }
 
 #icon03 {
     top: 47%;
     left: 13%;
-    background-image: url(../../../img/final/icon03.png);
+    background-image: url(../../img/final/icon03.svg);
 }
 
 #icon04 {
-    background-image: url(../../../img/final/icon04.png);
+    background-image: url(../../img/final/icon04.svg);
 }
 
 .dynamic_icons {
@@ -248,14 +248,14 @@
     top: 47%;
     left: 52%;
     z-index: 1;
-    background-image: url(../../../img/final/img04.png);
+    background-image: url(../../img/final/img04.svg);
 }
 
 #txt_box_content01 #txt_box02 {
     top: 52%;
     left: 49%;
     z-index: 0;
-    background-image: url(../../../img/final/img03.png);
+    background-image: url(../../img/final/img03.svg);
 }
 
 #txt_box_content01 #txt01,
@@ -302,14 +302,14 @@
     top: 47%;
     left: 52%;
     z-index: 1;
-    background-image: url(../../../img/final/img06.png);
+    background-image: url(../../img/final/img06.svg);
 }
 
 #txt_box_content02 #txt_box02 {
     top: 51%;
     left: 48.5%;
     z-index: 0;
-    background-image: url(../../../img/final/img05.png);
+    background-image: url(../../img/final/img05.svg);
 }
 
 #bt_download {
@@ -318,7 +318,7 @@
     width: 3%;
     height: 5.5%;
     cursor: pointer;
-    background-image: url(../../../img/final/bt_download.png);
+    background-image: url(../../img/final/bt_download.svg);
 }
 
 .titles span {

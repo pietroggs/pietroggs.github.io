@@ -54,16 +54,20 @@ function selectScore(obj, roll, numb) {
 
     let hovering = null;
     switch (numb) {
-        case 0: hovering = 'background-image: url(../../../img/avaliacao/icon_face_01_hover.png);'
+        case 0: hovering = 'background-image: url(../../img/avaliacao/icon_face_01_hover.svg);'
+            call_face_anim(1);
             break;
-        case 1: hovering = 'background-image: url(../../../img/avaliacao/icon_face_02_hover.png);'
+        case 1: hovering = 'background-image: url(../../img/avaliacao/icon_face_02_hover.svg);'
+            call_face_anim(2);
             break;
-        case 2: hovering = 'background-image: url(../../../img/avaliacao/icon_face_03_hover.png);'
+        case 2: hovering = 'background-image: url(../../img/avaliacao/icon_face_03_hover.svg);'
+            call_face_anim(3);
             break;
-        case 3: hovering = 'background-image: url(../../../img/avaliacao/icon_face_04_hover.png);'
+        case 3: hovering = 'background-image: url(../../img/avaliacao/icon_face_04_hover.svg);'
+            call_face_anim(4);
             break;
-        case 4: hovering = 'background-image: url(../../../img/avaliacao/icon_face_05_hover.png);'
-            call_face_anim();
+        case 4: hovering = 'background-image: url(../../img/avaliacao/icon_face_05_hover.svg);'
+            call_face_anim(5);
             break;
     }
     obj.style.cssText = `top: 63%; ${hovering}`;
@@ -97,8 +101,8 @@ function sendInt() {
     createPop();
 }
 
-var face_anim = document.querySelector('#face_anim');
-function call_face_anim() {
+function call_face_anim(index) {
+    var face_anim = document.querySelector('#face_anim0'+ [index]);
     face_anim.className = '';
     TweenMax.fromTo(face_anim, .5, { autoAlpha: 1, scale: 1 }, { autoAlpha: 0, scale: 3, onComplete: () => { face_anim.className = 'hide' } });
 }

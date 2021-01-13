@@ -130,7 +130,7 @@ function highTop(arr) {
         boxes_arr[c].querySelector('.titles_boxes').style.cssText = 'color: #977FB8';
         boxes_arr[c].querySelector('.txt_boxes').style.cssText = 'color: #1D5A9F';
 
-        icons_array[x].style.cssText = `background-image: url(../../img/final/icon0${(c + 1)}.png);`;
+        icons_array[x].style.cssText = `background-image: url(../../img/final/icon0${(c + 1)}.svg);`;
         x++;
     });
 }
@@ -176,22 +176,4 @@ function calcPerc() {
 
     console.log('Result: ' + calc_arrays);
     return calc_arrays;
-}
-
-$('#bt_download')[0].onclick = function () {
-    callDownload();
-}
-
-function callDownload() {
-    console.log('calling download');
-    parent.hideHud();
-    let div = document.querySelector('.card')
-    html2canvas(div).then(
-        function (canvas) {
-            // document.querySelector('.card').appendChild(canvas);
-            var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-            Canvas2Image.saveAsPNG(canvas);
-            // window.location.href = image;
-        });
-    parent.showHud('6');
 }

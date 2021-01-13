@@ -27,7 +27,7 @@ function createPodcast(t1_t = '29%', t1_l = '37%') {
     create('', '#pop_lock', 'pop_mask', 'pop_mask');
     // Criando Png
     let piv_audio = document.createElement("audio");
-    piv_audio.src = `Episodio 0${card4_n}.mp3`;
+    piv_audio.src = `Episodio0${card4_n}.mp3`;
     piv_audio.controls = true;
     piv_audio.volume = 0.5;
     document.querySelector('#pop_lock').appendChild(piv_audio);

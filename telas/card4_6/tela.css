@@ -1,7 +1,7 @@
 /* card4_1 */
 
 .card {
-    background-image: url(../../../img/interacoes/bg.png);
+    background-image: url(../../img/interacoes/bg.svg);
     background-color: white;
 }
 
@@ -23,7 +23,7 @@
     left: 13%;
     width: 19%;
     height: 9%;
-    background-image: url(../../../img/interacoes/6/title_bg.png);
+    background-image: url(../../img/interacoes/6/title_bg.svg);
     background-size: auto;
     z-index: 2;
 }
@@ -121,7 +121,7 @@
     left: 12%;
     width: 19.5%;
     height: 9%;
-    background-image: url(../../../img/interacoes/bt1_bg.png);
+    background-image: url(../../img/interacoes/bt1_bg.svg);
     background-size: auto;
     z-index: 2;
     cursor: pointer;
@@ -139,11 +139,11 @@
 #btn1 div {
     top: 50%;
     left: 86%;
-    background-image: url(../../img/seta_roxa.png);
+    background-image: url(../../img/seta_roxa.svg);
 }
 
 #btn1:hover {
-    background-image: url(../../../img/interacoes/bt1_bg_roxo.png);
+    background-image: url(../../img/interacoes/bt1_bg_roxo.svg);
 }
 
 #btn1:hover p {
@@ -151,7 +151,9 @@
 }
 
 #btn1:hover div {
-    background-image: url(../../img/seta_amarela.png);
+    background-image: url(../../img/seta_amarela.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* VIDEO */
@@ -207,7 +209,7 @@ video {
     left: 87.5%;
     width: 66px;
     height: 80px;
-    background-image: url(../../../img/interacoes/bt_box.png);
+    background-image: url(../../img/interacoes/bt_box.svg);
 }
 
 #bt_box_2 img {
@@ -221,14 +223,16 @@ video {
     left: 93.8%;
     width: 132px;
     height: 68px;
-    background-image: url(../../../img/interacoes/btn_bt_bg.png);
+    background-image: url(../../img/interacoes/btn_bt_bg.svg);
     cursor: pointer;
 }
 
 #btn_bt_2 div {
     top: 50%;
     left: 74%;
-    background-image: url(../../img/seta_amarela.png);
+    background-image: url(../../img/seta_amarela.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #bt_seta2 {
@@ -236,11 +240,11 @@ video {
 }
 
 #btn_bt_2:hover {
-    background-image: url(../../../img/interacoes/btn_bt_bg2.png);
+    background-image: url(../../img/interacoes/btn_bt_bg2.svg);
 }
 
 #btn_bt_2:hover div {
-    background-image: url(../../img/seta_roxa.png);
+    background-image: url(../../img/seta_roxa.svg);
 }
 
 #btn_bt_2:hover span {
@@ -258,7 +262,7 @@ video {
     left: 70.5%;
     width: 66px;
     height: 80px;
-    background-image: url(../../../img/interacoes/bt_box.png);
+    background-image: url(../../img/interacoes/bt_box.svg);
 }
 
 #bt_box_1 img {
@@ -272,22 +276,24 @@ video {
     left: 76.8%;
     width: 132px;
     height: 68px;
-    background-image: url(../../../img/interacoes/btn_bt_bg.png);
+    background-image: url(../../img/interacoes/btn_bt_bg.svg);
     cursor: pointer;
 }
 
 #btn_bt_1 div {
     top: 50%;
     left: 74%;
-    background-image: url(../../img/seta_amarela.png);
+    background-image: url(../../img/seta_amarela.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #btn_bt_1:hover {
-    background-image: url(../../../img/interacoes/btn_bt_bg2.png);
+    background-image: url(../../img/interacoes/btn_bt_bg2.svg);
 }
 
 #btn_bt_1:hover div {
-    background-image: url(../../img/seta_roxa.png);
+    background-image: url(../../img/seta_roxa.svg);
 }
 
 #btn_bt_1:hover span {

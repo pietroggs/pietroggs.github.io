@@ -1,7 +1,7 @@
 /* card5 */
 
 .card {
-    background-image: url(../../../img/avaliacao/fundo.png);
+    background-image: url(../../img/avaliacao/fundo.svg);
     background-color: #fff;
 }
 
@@ -32,7 +32,7 @@
     left: 14%;
     height: 9%;
     width: 23%;
-    background-image: url(../../../img/avaliacao/img01.png);
+    background-image: url(../../img/avaliacao/img01.svg);
     background-size: auto;
 }
 
@@ -50,14 +50,14 @@
     top: 48%;
     left: 52%;
     z-index: 1;
-    background-image: url(../../../img/avaliacao/img03.png);
+    background-image: url(../../img/avaliacao/img03.svg);
 }
 
 #txt_bg02 {
     top: 51%;
     left: 48%;
     z-index: 0;
-    background-image: url(../../../img/avaliacao/img02.png);
+    background-image: url(../../img/avaliacao/img02.svg);
 }
 
 .txt_boxes {
@@ -89,7 +89,7 @@
     top: 21%;
     height: 25%;
     width: 29%;
-    background-image: url(../../../img/avaliacao/img04.png);
+    background-image: url(../../img/avaliacao/img04.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -123,19 +123,19 @@
 }
 
 #icons_box_content01 .categories_icons_boxes {
-    background-image: url(../../../img/avaliacao/icon01.png);
+    background-image: url(../../img/avaliacao/icon01.svg);
 }
 
 #icons_box_content02 .categories_icons_boxes {
-    background-image: url(../../../img/avaliacao/icon02.png);
+    background-image: url(../../img/avaliacao/icon02.svg);
 }
 
 #icons_box_content03 .categories_icons_boxes {
-    background-image: url(../../../img/avaliacao/icon03.png);
+    background-image: url(../../img/avaliacao/icon03.svg);
 }
 
 #icons_box_content04 .categories_icons_boxes {
-    background-image: url(../../../img/avaliacao/icon04.png);
+    background-image: url(../../img/avaliacao/icon04.svg);
 }
 
 .categories_icons_boxes {
@@ -154,56 +154,56 @@
 /* ICONS */
 #icon01.icons_boxes {
     left: 15%;
-    background-image: url(../../../img/avaliacao/icon_face_01.png);
+    background-image: url(../../img/avaliacao/icon_face_01.svg);
 }
 
 #icon02.icons_boxes {
     left: 32.5%;
-    background-image: url(../../../img/avaliacao/icon_face_02.png);
+    background-image: url(../../img/avaliacao/icon_face_02.svg);
 }
 
 #icon03.icons_boxes {
     left: 50.5%;
-    background-image: url(../../../img/avaliacao/icon_face_03.png);
+    background-image: url(../../img/avaliacao/icon_face_03.svg);
 }
 
 #icon04.icons_boxes {
     left: 67.7%;
-    background-image: url(../../../img/avaliacao/icon_face_04.png);
+    background-image: url(../../img/avaliacao/icon_face_04.svg);
 }
 
 #icon05.icons_boxes {
     left: 85.5%;
-    background-image: url(../../../img/avaliacao/icon_face_05.png);
+    background-image: url(../../img/avaliacao/icon_face_05.svg);
 }
 
 /* ICONS HOVER */
 #icon01:hover.icons_boxes {
-    background-image: url(../../../img/avaliacao/icon_face_01_hover.png);
+    background-image: url(../../img/avaliacao/icon_face_01_hover.svg);
     transform: translate(-50%, -50%) scale(1.2);
     top: 63%;
 }
 
 #icon02:hover.icons_boxes {
-    background-image: url(../../../img/avaliacao/icon_face_02_hover.png);
+    background-image: url(../../img/avaliacao/icon_face_02_hover.svg);
     transform: translate(-50%, -50%) scale(1.2);
     top: 63%;
 }
 
 #icon03:hover.icons_boxes {
-    background-image: url(../../../img/avaliacao/icon_face_03_hover.png);
+    background-image: url(../../img/avaliacao/icon_face_03_hover.svg);
     transform: translate(-50%, -50%) scale(1.2);
     top: 63%;
 }
 
 #icon04:hover.icons_boxes {
-    background-image: url(../../../img/avaliacao/icon_face_04_hover.png);
+    background-image: url(../../img/avaliacao/icon_face_04_hover.svg);
     transform: translate(-50%, -50%) scale(1.2);
     top: 63%;
 }
 
 #icon05:hover.icons_boxes {
-    background-image: url(../../../img/avaliacao/icon_face_05_hover.png);
+    background-image: url(../../img/avaliacao/icon_face_05_hover.svg);
     transform: translate(-50%, -50%) scale(1.2);
     top: 63%;
 }
@@ -229,7 +229,7 @@
     left: 91.5%;
     width: 14%;
     height: 8%;
-    background-image: url(../../../img/avaliacao/bt_bg.png);
+    background-image: url(../../img/avaliacao/bt_bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -248,7 +248,7 @@
     left: 78%;
     width: 15%;
     height: 31%;
-    background-image: url(../../img/seta_roxa.png);
+    background-image: url(../../img/seta_roxa.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -256,11 +256,11 @@
 }
 
 #btn_bt_1:hover {
-    background-image: url(../../../img/avaliacao/bt_bg_hover.png);
+    background-image: url(../../img/avaliacao/bt_bg_hover.svg);
 }
 
 #btn_bt_1:hover div {
-    background-image: url(../../../img/seta_amarela.png);
+    background-image: url(../../img/seta_amarela.svg);
     animation: float_left2 1s infinite;
     transition: 0.5s;
 }
@@ -269,12 +269,35 @@
     color: #FFD62B;
 }
 
-#face_anim {
+#face_anim01 {
+    background-image: url(../../img/avaliacao/icon_face_01_hover.svg);
+}
+
+#face_anim02 {
+    background-image: url(../../img/avaliacao/icon_face_02_hover.svg);
+}
+
+#face_anim03 {
+    background-image: url(../../img/avaliacao/icon_face_03_hover.svg);
+}
+
+#face_anim04 {
+    background-image: url(../../img/avaliacao/icon_face_04_hover.svg);
+}
+
+#face_anim05 {
+    background-image: url(../../img/avaliacao/icon_face_05_hover.svg);
+}
+
+#face_anim01,
+#face_anim02,
+#face_anim03,
+#face_anim04,
+#face_anim05 {
     top: 49%;
     left: 62%;
     width: 5%;
     height: 10%;
-    background-image: url(../../../img/avaliacao/icon_face_05_hover.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -287,7 +310,7 @@
     left: 50%;
     width: 420px;
     height: 400px;
-    background-image: url(pop/box_azul.png);
+    background-image: url(pop/box_azul.svg);
     z-index: 9;
 }
 
@@ -296,7 +319,7 @@
     left: 50.5%;
     width: 414px;
     height: 395px;
-    background-image: url(pop/box_branco.png);
+    background-image: url(pop/box_branco.svg);
     z-index: 9;
 }
 
@@ -305,7 +328,7 @@
     left: 18%;
     width: 73px;
     height: 73px;
-    background-image: url(pop/face.png);
+    background-image: url(pop/face.svg);
 }
 
 #pop_p1 {
@@ -332,7 +355,7 @@
     left: 84%;
     width: 190px;
     height: 68px;
-    background-image: url(pop/btn2.png);
+    background-image: url(pop/btn2.svg);
     cursor: pointer;
 }
 
@@ -351,7 +374,7 @@
     left: 79%;
     height: 42%;
     width: 20%;
-    background-image: url(../../img/seta_roxa.png);
+    background-image: url(../../img/seta_roxa.svg);
     background-size: auto;
 }
 
@@ -387,7 +410,7 @@
     left: 13%;
     width: 190px;
     height: 68px;
-    background-image: url(pop/btn1.png);
+    background-image: url(pop/btn1.svg);
     cursor: pointer;
 }
 
@@ -406,7 +429,7 @@
     left: 16%;
     height: 42%;
     width: 20%;
-    background-image: url(../../img/seta_amarela.png);
+    background-image: url(../../img/seta_amarela.svg);
     background-size: auto;
     transform: translate(-50%, -50%) scaleX(-1);
 }

@@ -1,7 +1,7 @@
 /* card0 */
 
 .card {
-    background-image: url(../../../img/capa/bg.png);
+    background-image: url(../../img/capa/bg.svg);
     background-color: #fff;
 }
 
@@ -9,21 +9,21 @@
     top: 22%;
     width: 43%;
     height: 20%;
-    background-image: url(../../../img/capa/img_txt01.png);
+    background-image: url(../../img/capa/img_txt01.svg);
 }
 
 .img_titles:nth-child(2) {
     top: 42%;
     width: 44.5%;
     height: 14%;
-    background-image: url(../../../img/capa/img_txt02.png);
+    background-image: url(../../img/capa/img_txt02.svg);
 }
 
 .img_titles:nth-child(3) {
     top: 57.5%;
     width: 44.5%;
     height: 14%;
-    background-image: url(../../../img/capa/img_txt03.png);
+    background-image: url(../../img/capa/img_txt03.svg);
 }
 
 .img_titles {
@@ -39,7 +39,7 @@
     height: 32%;
     width: 36%;
     z-index: 1;
-    background-image: url(../../../img/capa/img01.png);
+    background-image: url(../../img/capa/img01.svg);
     background-position: top right;
 }
 
@@ -49,7 +49,7 @@
     width: 77%;
     height: 95%;
     z-index: 0;
-    background-image: url(../../../img/capa/img02.png);
+    background-image: url(../../img/capa/img02.svg);
 }
 
 #img03 {
@@ -57,7 +57,7 @@
     left: 4%;
     width: 9%;
     height: 22%;
-    background-image: url(../../../img/capa/img03.png);
+    background-image: url(../../img/capa/img03.svg);
     background-position-y: top;
 }
 
@@ -67,7 +67,7 @@
     width: 39%;
     height: 29%;
     z-index: 2;
-    background-image: url(../../../img/capa/img04.png);
+    background-image: url(../../img/capa/img04.svg);
 }
 
 #img05 {
@@ -76,7 +76,7 @@
     height: 18%;
     width: 14%;
     z-index: 1;
-    background-image: url(../../../img/capa/img05.png);
+    background-image: url(../../img/capa/img05.svg);
 }
 
 #img06 {
@@ -85,7 +85,7 @@
     height: 9%;
     width: 12%;
     z-index: 1;
-    background-image: url(../../../img/capa/img06.png);
+    background-image: url(../../img/capa/img06.svg);
 }
 
 #img07 {
@@ -94,7 +94,7 @@
     height: 2%;
     width: 13%;
     z-index: 3;
-    background-image: url(../../../img/capa/img07.png);
+    background-image: url(../../img/capa/img07.svg);
 }
 
 /* BTN1 */
@@ -103,9 +103,9 @@
     left: 50%;
     width: 19%;
     height: 11%;
-    z-index: 2;
     cursor: pointer;
-    background-image: url(../../../img/capa/bt_bg.png);
+    z-index: 2;
+    background-image: url(../../img/capa/bt_bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -124,7 +124,7 @@
     left: 86%;
     width: 15%;
     height: 31%;
-    background-image: url(../../img/seta_azul.png);
+    background-image: url(../../img/seta_azul.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,11 +132,11 @@
 }
 
 #btn_bt_1:hover {
-    background-image: url(../../../img/capa/bt_bg_hover.png);
+    background-image: url(../../img/capa/bt_bg_hover.svg);
 }
 
 #btn_bt_1:hover div {
-    background-image: url(../../../img/seta_amarela.png);
+    background-image: url(../../img/seta_amarela.svg);
     animation: float_left 1s infinite;
     transition: 0.5s;
 }

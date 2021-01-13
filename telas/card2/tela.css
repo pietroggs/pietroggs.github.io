@@ -1,7 +1,7 @@
 /* card1 */
 
 .card {
-    background-image: url(../../../img/introducao/bg.png);
+    background-image: url(../../img/introducao/bg.svg);
     background-color: #fff;
 }
 
@@ -24,7 +24,7 @@
     left: 23.5%;
     height: 20%;
     width: 34.6%;
-    background-image: url(../../../img/introducao/img01.png);
+    background-image: url(../../img/introducao/img01.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -40,14 +40,14 @@
     top: 47%;
     left: 50%;
     z-index: 1;
-    background-image: url(../../../img/introducao/img02.png);
+    background-image: url(../../img/introducao/img02.svg);
 }
 
 #txt_bg02 {
     top: 52%;
     left: 47%;
     z-index: 0;
-    background-image: url(../../../img/introducao/img03.png);
+    background-image: url(../../img/introducao/img03.svg);
 }
 
 .txt_boxes {
@@ -71,6 +71,12 @@
     color: #977FB8;
     font-weight: 800;
     font-style: italic;
+}
+
+i{
+    display: inline;
+    position: relative !important;
+    transform: none !important;
 }
 
 #txt1 {
@@ -100,16 +106,16 @@
     height: 10%;
     width: 12%;
     z-index: 1;
-    background-image: url(../../../img/introducao/img04.png);
+    background-image: url(../../img/introducao/img04.svg);
 }
 
 #img02 {
     top: 33%;
     left: 80.8%;
     height: 8%;
-    width: 6%;
+    width: 7%;
     z-index: 1;
-    background-image: url(../../../img/introducao/img05.png);
+    background-image: url(../../img/introducao/img05.svg);
 }
 
 #img03 {
@@ -118,7 +124,7 @@
     height: 9%;
     width: 12%;
     z-index: 1;
-    background-image: url(../../../img/introducao/img06.png);
+    background-image: url(../../img/introducao/img06.svg);
 }
 
 #img04 {
@@ -127,7 +133,7 @@
     height: 2%;
     width: 13%;
     z-index: 3;
-    background-image: url(../../../img/introducao/img07.png);
+    background-image: url(../../img/introducao/img07.svg);
 }
 
 /* BTN1 */
@@ -138,7 +144,7 @@
     height: 9%;
     z-index: 2;
     cursor: pointer;
-    background-image: url(../../../img/introducao/bt_bg.png);
+    background-image: url(../../img/introducao/bt_bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -157,7 +163,7 @@
     left: 86%;
     width: 15%;
     height: 31%;
-    background-image: url(../../img/seta_azul.png);
+    background-image: url(../../img/seta_azul.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -165,11 +171,11 @@
 }
 
 #btn_bt_1:hover {
-    background-image: url(../../../img/introducao/bt_bg_hover.png);
+    background-image: url(../../img/introducao/bt_bg_hover.svg);
 }
 
 #btn_bt_1:hover div {
-    background-image: url(../../../img/seta_amarela.png);
+    background-image: url(../../img/seta_amarela.svg);
     animation: float_left 1s infinite;
     transition: 0.5s;
 }

@@ -55,12 +55,12 @@ iframe {
 /* FONT-FACE */
 @font-face {
     font-family: "londrina";
-    src: url(../../assets/fonts/LondrinaSolidRegular.otf) format("opentype");
+    src: url(../assets/fonts/LondrinaSolidRegular.otf) format("opentype");
 }
 
 @font-face {
     font-family: "cabin";
-    src: url(../../assets/fonts/cabinRegular.otf) format("opentype");
+    src: url(../assets/fonts/cabinRegular.otf) format("opentype");
 }
 
 /* Popup */
@@ -108,7 +108,7 @@ audio::-webkit-media-controls-enclosure {
     left: 67%;
     width: 46px;
     height: 46px;
-    background-image: url(../img/close.png);
+    background-image: url(../img/close.svg);
     cursor: pointer;
     z-index: 7;
 }
@@ -118,7 +118,7 @@ audio::-webkit-media-controls-enclosure {
     left: 96%;
     width: 46px;
     height: 46px;
-    background-image: url(../img/close.png);
+    background-image: url(../img/close.svg);
     cursor: pointer;
     z-index: 99999999;
 }

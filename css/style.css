@@ -37,7 +37,7 @@ body {
     overflow: hidden;
     background-color: transparent;
     z-index: 1;
-    background-image: url(../img/menu/bg.png);
+    background-image: url(../img/menu/bg.svg);
 }
 
 iframe {
@@ -112,11 +112,11 @@ iframe {
 
 /* Preloader Things */
 
-#preload_content {
+/* #preload_content {
     width: 100%;
     height: 100%;
     background-image: url(../img/preload_bg.png);
-}
+} */
 
 #txt_load {
     position: absolute;
@@ -155,11 +155,11 @@ iframe {
 }
 
 .home1 {
-    background-image: url(../img/btn_home_bg.png);
+    background-image: url(../img/btn_home_bg.svg);
 }
 
 .home2 {
-    background-image: url(../img/btn_home_bg2.png);
+    background-image: url(../img/btn_home_bg2.svg);
 }
 
 #home_ico {
@@ -167,16 +167,16 @@ iframe {
     left: 48%;
     width: 32px;
     height: 27px;
-    background-image: url(../img/btn_home_ico.png);
+    background-image: url(../img/btn_home_ico.svg);
 }
 
 .home1:hover {
-    background-image: url(../img/btn_home_bg_hover.png);
+    background-image: url(../img/btn_home_bg_hover.svg);
 }
 
 .home1:hover #home_ico {
     animation: home_btn_anim 0.5s infinite;
-    background-image: url(../img/btn_home_ico_hover.png);
+    background-image: url(../img/btn_home_ico_hover.svg);
 }
 
 .home2:hover #home_ico {
@@ -217,11 +217,11 @@ iframe {
 }
 
 .back1 {
-    background-image: url(../img/btn_home_bg.png);
+    background-image: url(../img/btn_home_bg.svg);
 }
 
 .back2 {
-    background-image: url(../img/btn_home_bg2.png);
+    background-image: url(../img/btn_home_bg2.svg);
 }
 
 #back_ico {
@@ -229,16 +229,16 @@ iframe {
     left: 68%;
     width: 39px;
     height: 21px;
-    background-image: url(../img/btn_back_ico.png);
+    background-image: url(../img/btn_back_ico.svg);
 }
 
 .back1:hover {
-    background-image: url(../img/btn_back_bg_hover.png);
+    background-image: url(../img/btn_back_bg_hover.svg);
 }
 
 .back1:hover #back_ico {
     animation: back_btn_anim 0.5s infinite;
-    background-image: url(../img/btn_back_ico_hover.png);
+    background-image: url(../img/btn_back_ico_hover.svg);
 }
 
 .back2:hover #back_ico {
