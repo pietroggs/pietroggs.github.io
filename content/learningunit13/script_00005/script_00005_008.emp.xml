@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_008" playerVersion="1.8.0" timeDependent="false" title="The same or different?">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>3</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="ID_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="ID_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="multiple" identifier="ID_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="ID_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="ID_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="ID_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="ID_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="ID_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="multiple" checkMode="default" countMode="correctAnswers" identifier="ID_RESPONSE_1">
+					<correctResponse>
+						<value>ID_RESPONSE_1_0</value>
+						<value>ID_RESPONSE_1_3</value>
+						<value>ID_RESPONSE_1_5</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<tutor tutorId="tutor1"/>
+		<div class="main-padding text-color-white">
+			<div class="header-title text-center">		
+				<div class="toc-lesson-title"><info class="variable-page-title page-specific"/><info class="variable-page-number page-specific"/></div>
+			</div>
+		</div>				
+		<div class="page-activity">	
+			<div class="page-content">	
+				<audioPlayer class="animated swing" data="media/rub_eyc1_u07_l01_p5_01au.mp3" id="dummy1">
+<source src="media/rub_eyc1_u07_l01_p5_01au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<group class="section-fluid" id="dummy2">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<group class="column-maxwidth-xs animated fadeIn" id="dummy2_1">
+	<group class="feedback margin-top-lg-2 text-center" id="dummy2_1_1">
+	<group id="dummy2_1_1_1">
+	<group class="grid-3x" id="dummy2_1_1_1_1">
+	<div class="row">
+	<div class="col-xs-12 col-sm-4">
+		<textInteraction id="dummy2_1_1_1_1_1">
+<identificationInteraction maxSelections="6" responseIdentifier="ID_RESPONSE_1">    <simpleChoice identifier="ID_RESPONSE_1_0"><img class="" src="media/eyc1_u07_l01_p5_01i.png"/></simpleChoice>
+</identificationInteraction>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+	</div>		
+	<div class="col-xs-12 col-sm-4">
+		<textInteraction id="dummy2_1_1_1_1_2">
+<identificationInteraction maxSelections="6" responseIdentifier="ID_RESPONSE_1">    <simpleChoice identifier="ID_RESPONSE_1_1"><img class="" src="media/eyc1_u07_l01_p5_02i.png"/></simpleChoice>
+</identificationInteraction>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+	</div>
+	<div class="col-xs-12 col-sm-4">
+		<textInteraction id="dummy2_1_1_1_1_3">
+<identificationInteraction maxSelections="6" responseIdentifier="ID_RESPONSE_1">    <simpleChoice identifier="ID_RESPONSE_1_2"><img class="" src="media/eyc1_u07_l01_p5_03i.png"/></simpleChoice>
+</identificationInteraction>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+	</div>
+</div>
+</group>			
+<group class="grid-3x" id="dummy2_1_1_1_2">
+	<div class="row">
+	<div class="col-xs-12 col-sm-4">
+		<textInteraction id="dummy2_1_1_1_2_1">
+<identificationInteraction maxSelections="6" responseIdentifier="ID_RESPONSE_1">    <simpleChoice identifier="ID_RESPONSE_1_3"><img class="" src="media/eyc1_u07_l01_p5_01i.png"/></simpleChoice>
+</identificationInteraction>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+	</div>		
+	<div class="col-xs-12 col-sm-4">
+		<textInteraction id="dummy2_1_1_1_2_2">
+<identificationInteraction maxSelections="6" responseIdentifier="ID_RESPONSE_1">    <simpleChoice identifier="ID_RESPONSE_1_4"><img class="" src="media/eyc1_u07_l01_p5_04i.png"/></simpleChoice>
+</identificationInteraction>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+	</div>
+	<div class="col-xs-12 col-sm-4">
+		<textInteraction id="dummy2_1_1_1_2_3">
+<identificationInteraction maxSelections="6" responseIdentifier="ID_RESPONSE_1">    <simpleChoice identifier="ID_RESPONSE_1_5"><img class="" src="media/eyc1_u07_l01_p5_01i.png"/></simpleChoice>
+</identificationInteraction>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+	</div>
+</div>
+</group>
+</group>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</group>
+</group>
+				<!-- cannot find module for dummy 'dummy2'!-->
+				<!-- cannot find module for dummy 'dummy3'!-->
+				<!-- cannot find module for dummy 'dummy4'!-->
+				<!-- cannot find module for dummy 'dummy5'!-->
+				<!-- cannot find module for dummy 'dummy6'!-->
+				<!-- cannot find module for dummy 'dummy7'!-->
+			</div>		
+		</div>
+	</div>
+</group>
+				<!-- cannot find module for dummy 'dummy3'!-->
+				<!-- cannot find module for dummy 'dummy4'!-->	
+				<!-- cannot find module for dummy 'dummy5'!-->
+				<!-- cannot find module for dummy 'dummy6'!-->
+				<!-- cannot find module for dummy 'dummy7'!-->
+				<!-- cannot find module for dummy 'dummy8'!-->
+				<!-- cannot find module for dummy 'dummy9'!-->	
+				<!-- cannot find module for dummy 'dummy10'!-->		
+			</div>				
+		</div>		
+		<div class="lesson-footer"> 
+		    <div class="lesson-footer-buttons">  
+				<markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>  
+		        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+		    </div>
+	    </div>
+		<div class="bottom_cloud"/>		
+			</itemBody>
+</assessmentItem>

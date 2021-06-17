@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_000" playerVersion="1.8.0" timeDependent="false" title="Lesson Content">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>0</value>
+		</defaultValue>
+	</outcomeDeclaration>
+		<itemBody>
+
+		<tutor tutorId="tutor1"/>
+		<div class="main-padding text-color-white">
+			<div class="header-title text-center">		
+				<div class="toc-lesson-title toc-specific"><info class="variable-lesson-title page-specific"/><info class="variable-page-number page-specific"/></div>
+			</div>
+		</div>
+		<div class="page-toc">	
+			<div class="main-toc-content page-content">	
+				<div class="toc-content-bg">					
+					<div class="toc-body">
+						<div class="toc-head"/>
+						<div class="toc-arm-left">
+							<div class="toc-arm"/>	
+						</div>
+						<div class="toc-arm-right">
+							<div class="toc-arm"/>	
+						</div>	
+						<report class="toc-content toc-skin">
+						  <prr>
+							<rd>
+								<div class="toc-line"> 
+									<link> 
+										<div class="toc-line-table">
+											<div class="gfx-separator"/>
+											<info class="variable-page-title"/>
+										</div>
+									</link>
+								</div>
+							</rd>
+						  </prr>
+						</report>
+					</div>
+				</div>			
+			</div>			
+		</div>
+		<div class="emp_link_button">
+			<div class="qp-link-text"><span>© 2016 </span></div>
+			<link url="http://www.ydp.eu"><span>Young Digital Planet</span></link>
+			<div class="qp-link-text"><span> | </span></div>
+			<link url="http://sanoma.com"><span>a Sanoma Company</span></link>
+		</div>
+			</itemBody>
+</assessmentItem>

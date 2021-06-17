@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<title>Empiria Player</title>
+
+	<!-- include Scorm API Wrapper !-->
+	<script src="runtime/common/util/util.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var windowLocation = window.location.toString();
+		var useScormYdp = toBool(getParam(windowLocation, "scormydp", false));
+		var useJsInject = toBool(getParam(windowLocation, "jsinjectrequests", false));
+		var previewMode = toBool(getParam(windowLocation, "previewMode", false));
+		var apiWrapperPath = "runtime/common/scorm/APIWrapper";
+		if (getParam(windowLocation, "api") == "13")
+			apiWrapperPath += "13";
+		apiWrapperPath += ".js";
+		document.write("<script src=\"" + apiWrapperPath + "\" type=\"text/javascript\"\><\/script>");
+
+		if (useJsInject) {
+			var jsFileRequestSuffix = ".js";
+			var jsFileRequestPerformer = "jsinject";
+			var jsFileRequestEnableLogging = false;
+		}
+
+		var lessonTitle = getParam(windowLocation, "title", "");
+		if (lessonTitle.length > 0)
+			document.title = lessonTitle;
+	</script>
+
+	<!-- empiria player !-->
+	<script type="text/javascript" language="javascript"
+		src="runtime/rtempiria/player/empiria.player.nocache.js"></script>
+	<script language="javascript">
+		window.scoStartDate = null;
+		window.player = null;
+
+		function empiriaPlayerAppLoaded() {
+			// start Scorm API
+			// doLMSInitialize();
+
+			// Initialize player
+			window.player = empiriaCreatePlayer('player');
+
+			// // Player flow options
+			window.player.importFlowOptions = function () {
+				return { showToC: false, showSummary: false, itemsDisplayMode: "ONE" }
+			};
+
+			// // state
+			window.player.importStateString = function () {
+				var state = doLMSGetValue("cmi.suspend_data");
+				if (state == null || state == false)
+					state = "";
+				return "";
+			}
+
+			// // work mode
+			window.player.enablePreviewMode = function () {
+				return previewMode;
+			}
+
+			// // mastery score
+			var mastery = doLMSGetMasteryScore();
+			if (mastery != "")
+				window.player.setMasteryScore(mastery);
+
+			// // load assessment
+			var sco = getAbsolutePageXmlUrl(true);
+			window.player.load(sco);
+
+			window.scoStartDate = new Date();
+		}
+
+	</script>
+
+	<style type="text/css">
+
+		#mainPreloader {
+			position: absolute;
+			width: 96px;
+			height: 96px;
+			top: 50%;
+			left: 50%;
+			margin-left: -48px;
+			margin-top: -48px;
+		}
+
+		/* .lesson-home-button-main,
+		.variable-page-number {
+			display: none !important;
+		} */
+
+		.variable-page-number {
+			display: none !important;
+		}
+	</style>
+
+</head>
+
+<body onunload="script_scorm.end()">
+
+	<div id="player"></div>
+
+	<img id="mainPreloader" src="runtime/rtempiria/player/preloader/preloader.gif">
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

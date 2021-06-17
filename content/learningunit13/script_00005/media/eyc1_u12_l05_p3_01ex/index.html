@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script>
+
+		var assetName = 'eyc1_u12_l05_p3_01ex';
+		
+		var _todo = 7;
+		var _done = 0;
+		var _errors = 0;
+		
+		var manifest = [
+			{src:"sounds/eyc1_u12_l05_p3_01au.mp3", id:"snd0"},
+			{src:"sounds/eyc1_u12_l05_p3_02au.mp3", id:"snd1"},
+			{src:"sounds/eyc1_u12_l05_p3_03au.mp3", id:"snd2"},
+			{src:"sounds/eyc1_u12_l05_p3_04au.mp3", id:"snd3"},
+			{src:"sounds/eyc1_u12_l05_p3_05au.mp3", id:"snd4"},
+			{src:"sounds/eyc1_u12_l05_p3_06au.mp3", id:"snd5"},
+			{src:"sounds/eyc1_u12_l05_p3_07au.mp3", id:"snd6"},
+			
+			
+			{src:"sounds/good.mp3", id:"GOOD"},
+			{src:"sounds/bad.mp3", id:"BAD"},
+			{src:"sounds/allok.mp3", id:"ALLOK"}
+		];
+		
+		var conf = [
+			{arr:['images/eyc1_u12_l05_p3_01ex_01i.png'], snd:'snd0'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_03i.png'], snd:'snd1'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_06i.png'], snd:'snd2'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_07i.png'], snd:'snd3'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_10i.png'], snd:'snd4'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_12i.png'], snd:'snd5'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_14i.png'], snd:'snd6'},
+			
+		];
+		
+		var conf2 = [
+			{arr:['images/eyc1_u12_l05_p3_01ex_02i.png'], snd:'snd0'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_04i.png'], snd:'snd1'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_05i.png'], snd:'snd2'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_08i.png'], snd:'snd3'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_09i.png'], snd:'snd4'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_11i.png'], snd:'snd5'},
+			{arr:['images/eyc1_u12_l05_p3_01ex_13i.png'], snd:'snd6'},
+			
+		];
+
+	</script>
+	
+    <script type="text/javascript" src="libs/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="libs/underscore-min.js"></script>
+	<script type="text/javascript" src="libs/interact.min.js"></script>
+    <script type="text/javascript" src="libs/ydp/interactive-activity.js"></script>
+	<script type="text/javascript" src="libs/ydp/interaction-template-2.js"></script>
+</head>
+
+<body>
+
+    <div class="ia-container">
+		<div class="in-cont">
+			<img id="bg" src="images/eyc1_u03_l05_p3_01ex_background.png" width="1050" height="590" />
+			<div id="holder0"><div class="elem" id="el0"></div></div>
+			<div id="holder1"><div class="elem" id="el1"></div></div>
+			<div id="area"></div>
+			
+			<div id="blenda"></div>
+			<div id="playBtn" class="button"></div>
+		</div>
+	
+    </div>
+	
+	<div id="preloader">
+		<img src="images/reset_click.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_01i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_02i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_03i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_04i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_05i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_06i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_07i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_08i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_09i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_10i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_11i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_12i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_13i.png"/>
+		<img src="images/eyc1_u12_l05_p3_01ex_14i.png"/>
+		
+	</div>
+
+</body>
+
+</html>
