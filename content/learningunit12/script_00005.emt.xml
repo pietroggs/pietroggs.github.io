@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentTest compilerVersion="3.3.2.188" gtm="true" identifer="10.05 My favourite foods" playerVersion="1.8.0" title="Unit 4">
+				
+		<testView href="common/lesson.emp.xml"/>
+		<extensionsLibrary>
+				<link href="common/ext/library.xml"/>
+		</extensionsLibrary>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+	<general>
+		<keyword><string>house</string></keyword>
+		<keyword><string>home</string></keyword>
+		<keyword><string>kitchen</string></keyword>
+		<keyword><string>cook</string></keyword>
+		<keyword><string>cooking</string></keyword>
+		<keyword><string>food</string></keyword>
+		<keyword><string>eat</string></keyword>
+		<keyword><string>eating</string></keyword>
+		<keyword><string>fruit</string></keyword>
+		<keyword><string>vegetables</string></keyword>
+		<keyword><string>cake</string></keyword>
+		<keyword><string>dish</string></keyword>
+		<keyword><string>snack</string></keyword>
+		<keyword><string>favourite</string></keyword>
+		<title><string>10.05 My favourite foods</string></title>
+	</general>
+</lom>
+	<styleDeclaration>
+		<link href="common/default.css" userAgent=".*"/>
+	</styleDeclaration>
+	<variableProcessing template="default"/>
+
+	<outcomeDeclaration cardinality="single" identifier="DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+	<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+	<outcomeDeclaration cardinality="single" identifier="RESET"/>
+	<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+
+	<testPart>
+		<assessmentSection>
+			<!-- <assessmentItemRef class="page-toc" href="script_00005/script_00005_000.emp.xml" identifier="ITEM_000"/> -->
+			<assessmentItemRef class="page-simulation" href="script_00005/script_00005_003.emp.xml" identifier="ITEM_001"/>
+			<assessmentItemRef class="page-simulation" href="script_00005/script_00002_003.emp.xml" identifier="ITEM_002"/>
+			<assessmentItemRef class="page-simulation" href="script_00005/script_00004_003.emp.xml" identifier="ITEM_003"/>
+		</assessmentSection>
+	</testPart>
+</assessmentTest>

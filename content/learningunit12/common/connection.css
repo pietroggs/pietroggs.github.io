@@ -1,0 +1,334 @@
+
+/* connection */
+
+/* connection line */
+.qp-connection-wrong{
+	fillStyle: #FF4A60; 
+	strokeStyle: #FF4A60;
+	lineWidth: 6;
+	lineCap: round;
+	lineJoin: round;
+}
+.qp-connection-correct{
+	fillStyle: #46C340; 
+	strokeStyle: #46C340;
+	lineWidth: 6;
+	lineCap: round;
+	lineJoin: round;
+}
+.qp-connection-none{
+	fillStyle: #fff; 
+	strokeStyle: #fff;
+	lineWidth: 6;
+	lineCap: round;
+	lineJoin: round;
+}
+.qp-connection-normal{
+	fillStyle: #0071BC; 
+	strokeStyle: #0071BC;
+	lineWidth: 6;
+	lineCap: round;
+	lineJoin: round;
+}
+.qp-connection-disabled{
+	fillStyle: #2B7B8E; 
+	strokeStyle: #2B7B8E;
+	lineWidth: 6;
+	lineCap: round;
+	lineJoin: round;
+}
+
+/* connection buttons */
+.qp-connection > canvas{
+    z-index:1;
+}
+.qp-connection-item-selection-button{
+	/*width:48px;
+	height:48px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: relative;
+	display:inline-block;
+	background-color:#fff;*/
+	
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: relative;
+	width:72px;
+	height:72px;
+	display: inline-block;
+	background: url(button_choice.png) no-repeat scroll 0 0 transparent;
+	background-size: 72px 72px;	
+	}
+
+.qp-connection-item-selection-button:after{
+  	/*background-color: #0071BC;
+    border-radius: 50%;
+    content: "";
+    display:inline-block;
+    height: 15px;
+    width: 15px;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    position: absolute;*/
+    
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: "";
+    display:inline-block;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    top: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    position: absolute;
+	}
+
+.qp-connection-item-conected .qp-connection-item-selection-button {
+	background-color: #FFC800;
+	background: url(button_choice_selected.png) no-repeat scroll 0 0 transparent;
+	background-size: 72px 72px;	
+}
+.qp-connection-item-conected .qp-connection-item-selection-button:after {
+	background-color: #0071BC;
+}
+
+.qp-connection-item-conected-disabled .qp-connection-item-selection-button {
+	background-color: #3EB1CC;
+	background: url(button_choice_disabled.png) no-repeat scroll 0 0 transparent;
+	background-size: 72px 72px;	
+ }
+.qp-connection-item-conected-disabled .qp-connection-item-selection-button:after {
+	background-color: #2B7B8E;
+ }
+
+/* connection vertical */
+.qp-connection .qp-connection-left-column,
+.qp-connection .qp-connection-right-column,
+.qp-connection.vertical .qp-connection-left-column,
+.qp-connection.vertical .qp-connection-right-column {
+	width:47%;
+	display:inline-block;
+	vertical-align:middle;
+	}
+.qp-connection .qp-connection-left-column,
+.qp-connection.vertical .qp-connection-left-column {
+	text-align:right;
+	}
+.qp-connection .qp-connection-right-column,
+.qp-connection.vertical .qp-connection-right-column {
+	text-align:left;
+	}
+.qp-connection .qp-connection-center-column,
+.qp-connection.vertical .qp-connection-center-column {
+	width:6%;
+	min-height:100%;
+	display:inline-block;
+	vertical-align:middle;
+	}
+	
+.qp-connection .qp-connection-item > div,	
+.qp-connection.vertical .qp-connection-item > div {
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 0.5em;
+	}
+	
+.qp-connection.vertical .qp-connection-item {
+	margin:0.5em 0;
+	}
+	
+.qp-connection.vertical.item-60perc .qp-connection-item .qp-connection-item-content{
+	max-width:60%;
+	}
+.qp-connection.vertical.item-12 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-11 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-10 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-9 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-8 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-7 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-6 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-5 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-4 .qp-connection-item .qp-text-inline > *,
+.qp-connection.vertical.item-3 .qp-connection-item .qp-text-inline > *{
+	display:inline-block;
+	vertical-align:middle;
+	}
+.qp-connection.linespacing-1.vertical .qp-connection-center-column {
+	width:6%;
+	}	
+.qp-connection.linespacing-2.vertical .qp-connection-center-column {
+	width:12%;
+	}
+.qp-connection.linespacing-3.vertical .qp-connection-center-column {
+	width:18%;
+	}
+.qp-connection.linespacing-4.vertical .qp-connection-center-column {
+	width:24%;
+	}	
+.qp-connection.linespacing-5.vertical .qp-connection-center-column {
+	width:30%;
+	}
+.qp-connection.linespacing-6.vertical .qp-connection-center-column {
+	width:33%;
+	}
+.qp-connection.linespacing-1.vertical  .qp-connection-left-column,
+.qp-connection.linespacing-1.vertical  .qp-connection-right-column {
+	width:47%;
+	}
+.qp-connection.linespacing-2.vertical  .qp-connection-left-column,
+.qp-connection.linespacing-2.vertical  .qp-connection-right-column {
+	width:44%;
+	}
+.qp-connection.linespacing-3.vertical  .qp-connection-left-column,
+.qp-connection.linespacing-3.vertical  .qp-connection-right-column {
+	width:41%;
+	}
+.qp-connection.linespacing-4.vertical  .qp-connection-left-column,
+.qp-connection.linespacing-4.vertical  .qp-connection-right-column {
+	width:38%;
+	}
+.qp-connection.linespacing-5.vertical  .qp-connection-left-column,
+.qp-connection.linespacing-5.vertical  .qp-connection-right-column {
+	width:35%;
+	}
+.qp-connection.linespacing-6.vertical  .qp-connection-left-column,
+.qp-connection.linespacing-6.vertical  .qp-connection-right-column {
+	width:33%;
+	}
+
+.qp-connection.vertical.w30-10-60 .qp-connection-left-column {width: 30%;}
+.qp-connection.vertical.w30-10-60 .qp-connection-center-column {width: 10%;}
+.qp-connection.vertical.w30-10-60 .qp-connection-right-column {width: 60%;}
+
+.qp-connection.vertical.w60-10-30 .qp-connection-left-column {width: 60%;}
+.qp-connection.vertical.w60-10-30 .qp-connection-center-column {width: 10%;}
+.qp-connection.vertical.w60-10-30 .qp-connection-right-column {width: 30%;}
+
+.qp-connection.vertical.w30-10-60 .qp-connection-left-column .qp-connection-item .qp-connection-item-content {max-width:55%;}
+.qp-connection.vertical.w30-10-60 .qp-connection-right-column .qp-connection-item .qp-connection-item-content {max-width:75%;}
+.qp-connection.vertical.w60-10-30 .qp-connection-left-column .qp-connection-item .qp-connection-item-content {max-width:75%;}
+.qp-connection.vertical.w60-10-30 .qp-connection-right-column .qp-connection-item .qp-connection-item-content {max-width:55%;}
+
+/* connection horizontal */
+.qp-connection.horizontal .qp-connection-left-column,
+.qp-connection.horizontal .qp-connection-right-column {
+	display:block;
+	width: auto;
+	text-align: center;
+	}
+	
+.qp-connection.horizontal .qp-connection-item {
+	display:inline-block;
+	text-align:center;
+	}
+	
+.qp-connection.horizontal .qp-connection-item > div{
+	margin:0.2em;
+	}
+.qp-connection.horizontal .qp-connection-item-content{
+	display:block;
+	}
+.qp-connection.horizontal .qp-connection-item .qp-connection-item-content .qp-text-inline{
+	display:block;
+	position: relative;
+	}
+
+.qp-connection.horizontal .qp-connection-item .qp-connection-item-content .qp-text-inline > *{
+	margin:5px;
+	}
+	
+.qp-connection.horizontal .qp-connection-item .qp-connection-item-content .qp-text-inline > span{
+	display:block;
+	}
+
+.qp-connection.horizontal .qp-connection-item .qp-connection-item-content .qp-text-inline > .qp-audioplayer-button,
+.qp-connection.horizontal .qp-connection-item .qp-connection-item-content .qp-text-inline > .qp-audioplayer-button-playing{
+	margin:0 5px;
+	}
+
+.qp-connection.horizontal .qp-connection-left-column .qp-connection-item {
+	vertical-align:bottom;
+	}
+	
+.qp-connection.horizontal .qp-connection-right-column .qp-connection-item {
+	vertical-align:top;
+	}
+
+.qp-connection.horizontal .qp-connection-center-column {
+	display:block;
+	min-height:2em;
+	}
+		
+.qp-connection.linespacing-1.horizontal .qp-connection-center-column {
+	min-height:1em;
+	}	
+.qp-connection.linespacing-2.horizontal .qp-connection-center-column {
+	min-height:2em;
+	}
+.qp-connection.linespacing-3.horizontal .qp-connection-center-column {
+	min-height:3em;
+	}
+.qp-connection.linespacing-4.horizontal .qp-connection-center-column {
+	min-height:4em;
+	}	
+.qp-connection.linespacing-5.horizontal .qp-connection-center-column {
+	min-height:5em;
+	}
+.qp-connection.linespacing-6.horizontal .qp-connection-center-column {
+	min-height:6em;
+	}
+	
+.qp-connection.horizontal .qp-connection-item .qp-connection-item-content .qp-img-content,		
+.qp-connection.horizontal .qp-connection-item .qp-connection-item-content .qp-img-default,
+.qp-connection.horizontal .qp-connection-item .qp-connection-item-content .qp-img{
+	width:100%;
+	display:block;
+	}	
+	
+.qp-connection.horizontal.item-8 .qp-connection-item{width: 12.5%;}
+.qp-connection.horizontal.item-7 .qp-connection-item{width: 14.2857%;}	
+.qp-connection.horizontal.item-6 .qp-connection-item{width:16.6667%}
+.qp-connection.horizontal.item-5 .qp-connection-item{width:20%;}
+.qp-connection.horizontal.item-4 .qp-connection-item{width:25%;}
+.qp-connection.horizontal.item-3 .qp-connection-item{width:33%;}
+.qp-connection.horizontal .qp-connection-item{}
+
+.qp-connection.horizontal.item-8-2 .qp-connection-right-column .qp-connection-item{width: 12.5%;}
+.qp-connection.horizontal.item-7-2 .qp-connection-right-column .qp-connection-item{width: 14.2857%;}		
+.qp-connection.horizontal.item-6-2 .qp-connection-right-column .qp-connection-item{width:16.6667%}	
+.qp-connection.horizontal.item-5-2 .qp-connection-right-column .qp-connection-item{width:20%;}	
+.qp-connection.horizontal.item-4-2 .qp-connection-right-column .qp-connection-item{width:25%;}	
+.qp-connection.horizontal.item-3-2 .qp-connection-right-column .qp-connection-item{width:33%;}
+.qp-connection.horizontal .qp-connection-item{}
+
+.qp-connection.vertical .qp-img-default {
+/*	height: 130px;*/
+	}
+.qp-connection.vertical.item-3 .qp-img {
+	width: auto;
+	height: 100%;
+}
+@media (max-width: 520px) {
+	.qp-connection.vertical .qp-img-default {
+		height: 80px;
+		}
+}
+@media (min-width: 992px) {
+	.qp-connection.vertical .qp-img-default {
+		height: 200px;
+		}
+}
+
+@media all and (orientation:portrait){
+	.qp-connection.horizontal .qp-connection-center-column {
+	display:block;
+	min-height:5em;
+	}
+	.qp-connection.horizontal.item-5 .qp-connection-item{width:25%;}	
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library version="2.1" loadType="internal" id="TutorExtensionEYC" src="TutorExtensionEYC.js">
+	<ext implementation="TutorExtensionEYC">
+		<attr name="type" value="com.yauthor.module.plugin.IEmpiriaPlugin"/>
+		<attr name="nodeName" value="TutorExtensionEYC"/>
+		<attr name="toolTip" value="TutorExtensionEYC"/>
+		<attr name="label" value="TutorExtensionEYC"/>
+		<attr name="displayName" value="TutorExtensionEYC"/>
+	</ext>
+</library>
