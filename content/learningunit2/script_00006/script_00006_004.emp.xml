@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_004" playerVersion="1.8.0" timeDependent="false" title="Practice 2">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>8</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_10-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_10-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_10-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_10-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_10-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_10-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_10-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_10-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="CHOICE_RESPONSE_10">
+					<correctResponse>
+						<value>CHOICE_RESPONSE_10_0</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_11-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_11-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_11-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_11-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_11-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_11-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_11-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_11-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="CHOICE_RESPONSE_11">
+					<correctResponse>
+						<value>CHOICE_RESPONSE_11_1</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_12-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_12-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_12-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_12-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_12-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_12-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_12-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_12-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="CHOICE_RESPONSE_12">
+					<correctResponse>
+						<value>CHOICE_RESPONSE_12_1</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_5-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_5-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_5-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_5-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_5-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_5-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_5-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_5-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="CHOICE_RESPONSE_5">
+					<correctResponse>
+						<value>CHOICE_RESPONSE_5_1</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_6-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_6-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_6-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_6-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_6-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_6-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_6-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_6-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="CHOICE_RESPONSE_6">
+					<correctResponse>
+						<value>CHOICE_RESPONSE_6_1</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_7-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_7-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_7-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_7-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_7-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_7-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_7-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_7-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="CHOICE_RESPONSE_7">
+					<correctResponse>
+						<value>CHOICE_RESPONSE_7_1</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_8-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_8-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_8-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_8-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_8-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_8-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_8-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_8-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="CHOICE_RESPONSE_8">
+					<correctResponse>
+						<value>CHOICE_RESPONSE_8_1</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_9-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_9-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_9-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_9-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_9-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_9-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CHOICE_RESPONSE_9-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CHOICE_RESPONSE_9-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="CHOICE_RESPONSE_9">
+					<correctResponse>
+						<value>CHOICE_RESPONSE_9_1</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-practice">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><shape class="home-button"/></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u06_p4_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u06_p4_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Listen and choose True or False.</simpleText>
+			</div>
+</group>			
+<group class="grid_2x50" id="dummy1_2">
+	<div class="t2x50">
+		<div class="w100perc">
+			<div class="w50perc">
+				<div class="inner">
+					<group id="dummy1_2_1">
+	<audioPlayer class="player_progress" data="media/y7_u06_p4_001au.mp3" id="dummy1_2_1_1">
+<source src="media/y7_u06_p4_001au.mp3" type="audio/mp4"/>		<template>
+		<div class="player player-progress">
+			<mediaPlayPauseButton id="mediaPlayPauseButton"/>
+			<mediaProgressBar id="mediaProgressBar"/>	
+			<mediaPositinInStream class="media-time" id="mediaPositinInStream"/>
+						
+		</div>
+		</template>
+	</audioPlayer>			
+<group class="grid_2x50_noline" id="dummy1_2_1_2">
+	<div class="t2x50-noline">
+		<div class="w100perc">
+			<div class="w50perc noline">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_2_1_2_1" src="media/y7_u06_p4_001i.jpg" srcFullScreen="media/y7_u06_p4_001i_f.jpg">
+</img>
+				</div>	
+			</div>
+			<div class="w50perc noline">
+				<div class="inner">
+					<choiceInteraction id="dummy1_2_1_2_2" maxChoices="1" responseIdentifier="CHOICE_RESPONSE_5" shuffle="false">
+	<simpleChoice identifier="CHOICE_RESPONSE_5_0">True	</simpleChoice>
+	<simpleChoice identifier="CHOICE_RESPONSE_5_1">False	</simpleChoice>
+</choiceInteraction>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+				</div>	
+			</div>
+			<div class="w50perc">
+				<div class="inner">
+					<group id="dummy1_2_2">
+	<audioPlayer class="player_progress" data="media/y7_u06_p4_002au.mp3" id="dummy1_2_2_1">
+<source src="media/y7_u06_p4_002au.mp3" type="audio/mp4"/>		<template>
+		<div class="player player-progress">
+			<mediaPlayPauseButton id="mediaPlayPauseButton"/>
+			<mediaProgressBar id="mediaProgressBar"/>	
+			<mediaPositinInStream class="media-time" id="mediaPositinInStream"/>
+						
+		</div>
+		</template>
+	</audioPlayer>			
+<group class="grid_2x50_noline" id="dummy1_2_2_2">
+	<div class="t2x50-noline">
+		<div class="w100perc">
+			<div class="w50perc noline">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_2_2_2_1" src="media/y7_u06_p4_001i.jpg" srcFullScreen="media/y7_u06_p4_001i_f.jpg">
+</img>
+				</div>	
+			</div>
+			<div class="w50perc noline">
+				<div class="inner">
+					<choiceInteraction id="dummy1_2_2_2_2" maxChoices="1" responseIdentifier="CHOICE_RESPONSE_6" shuffle="false">
+	<simpleChoice identifier="CHOICE_RESPONSE_6_0">True	</simpleChoice>
+	<simpleChoice identifier="CHOICE_RESPONSE_6_1">False	</simpleChoice>
+</choiceInteraction>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>			
+<group class="grid_2x50" id="dummy1_3">
+	<div class="t2x50">
+		<div class="w100perc">
+			<div class="w50perc">
+				<div class="inner">
+					<group id="dummy1_3_1">
+	<audioPlayer class="player_progress" data="media/y7_u06_p4_003au.mp3" id="dummy1_3_1_1">
+<source src="media/y7_u06_p4_003au.mp3" type="audio/mp4"/>		<template>
+		<div class="player player-progress">
+			<mediaPlayPauseButton id="mediaPlayPauseButton"/>
+			<mediaProgressBar id="mediaProgressBar"/>	
+			<mediaPositinInStream class="media-time" id="mediaPositinInStream"/>
+						
+		</div>
+		</template>
+	</audioPlayer>			
+<group class="grid_2x50_noline" id="dummy1_3_1_2">
+	<div class="t2x50-noline">
+		<div class="w100perc">
+			<div class="w50perc noline">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_3_1_2_1" src="media/y7_u06_p4_002i.jpg" srcFullScreen="media/y7_u06_p4_002i_f.jpg">
+</img>
+				</div>	
+			</div>
+			<div class="w50perc noline">
+				<div class="inner">
+					<choiceInteraction id="dummy1_3_1_2_2" maxChoices="1" responseIdentifier="CHOICE_RESPONSE_7" shuffle="false">
+	<simpleChoice identifier="CHOICE_RESPONSE_7_0">True	</simpleChoice>
+	<simpleChoice identifier="CHOICE_RESPONSE_7_1">False	</simpleChoice>
+</choiceInteraction>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+				</div>	
+			</div>
+			<div class="w50perc">
+				<div class="inner">
+					<group id="dummy1_3_2">
+	<audioPlayer class="player_progress" data="media/y7_u06_p4_004au.mp3" id="dummy1_3_2_1">
+<source src="media/y7_u06_p4_004au.mp3" type="audio/mp4"/>		<template>
+		<div class="player player-progress">
+			<mediaPlayPauseButton id="mediaPlayPauseButton"/>
+			<mediaProgressBar id="mediaProgressBar"/>	
+			<mediaPositinInStream class="media-time" id="mediaPositinInStream"/>
+						
+		</div>
+		</template>
+	</audioPlayer>			
+<group class="grid_2x50_noline" id="dummy1_3_2_2">
+	<div class="t2x50-noline">
+		<div class="w100perc">
+			<div class="w50perc noline">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_3_2_2_1" src="media/y7_u06_p4_003i.jpg" srcFullScreen="media/y7_u06_p4_003i_f.jpg">
+</img>
+				</div>	
+			</div>
+			<div class="w50perc noline">
+				<div class="inner">
+					<choiceInteraction id="dummy1_3_2_2_2" maxChoices="1" responseIdentifier="CHOICE_RESPONSE_8" shuffle="false">
+	<simpleChoice identifier="CHOICE_RESPONSE_8_0">True	</simpleChoice>
+	<simpleChoice identifier="CHOICE_RESPONSE_8_1">False	</simpleChoice>
+</choiceInteraction>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>			
+<group class="grid_2x50" id="dummy1_4">
+	<div class="t2x50">
+		<div class="w100perc">
+			<div class="w50perc">
+				<div class="inner">
+					<group id="dummy1_4_1">
+	<audioPlayer class="player_progress" data="media/y7_u06_p4_005au.mp3" id="dummy1_4_1_1">
+<source src="media/y7_u06_p4_005au.mp3" type="audio/mp4"/>		<template>
+		<div class="player player-progress">
+			<mediaPlayPauseButton id="mediaPlayPauseButton"/>
+			<mediaProgressBar id="mediaProgressBar"/>	
+			<mediaPositinInStream class="media-time" id="mediaPositinInStream"/>
+						
+		</div>
+		</template>
+	</audioPlayer>			
+<group class="grid_2x50_noline" id="dummy1_4_1_2">
+	<div class="t2x50-noline">
+		<div class="w100perc">
+			<div class="w50perc noline">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_4_1_2_1" src="media/y7_u06_p4_004i.jpg" srcFullScreen="media/y7_u06_p4_004i_f.jpg">
+</img>
+				</div>	
+			</div>
+			<div class="w50perc noline">
+				<div class="inner">
+					<choiceInteraction id="dummy1_4_1_2_2" maxChoices="1" responseIdentifier="CHOICE_RESPONSE_9" shuffle="false">
+	<simpleChoice identifier="CHOICE_RESPONSE_9_0">True	</simpleChoice>
+	<simpleChoice identifier="CHOICE_RESPONSE_9_1">False	</simpleChoice>
+</choiceInteraction>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+				</div>	
+			</div>
+			<div class="w50perc">
+				<div class="inner">
+					<group id="dummy1_4_2">
+	<audioPlayer class="player_progress" data="media/y7_u06_p4_006au.mp3" id="dummy1_4_2_1">
+<source src="media/y7_u06_p4_006au.mp3" type="audio/mp4"/>		<template>
+		<div class="player player-progress">
+			<mediaPlayPauseButton id="mediaPlayPauseButton"/>
+			<mediaProgressBar id="mediaProgressBar"/>	
+			<mediaPositinInStream class="media-time" id="mediaPositinInStream"/>
+						
+		</div>
+		</template>
+	</audioPlayer>			
+<group class="grid_2x50_noline" id="dummy1_4_2_2">
+	<div class="t2x50-noline">
+		<div class="w100perc">
+			<div class="w50perc noline">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_4_2_2_1" src="media/y7_u06_p4_005i.jpg" srcFullScreen="media/y7_u06_p4_005i_f.jpg">
+</img>
+				</div>	
+			</div>
+			<div class="w50perc noline">
+				<div class="inner">
+					<choiceInteraction id="dummy1_4_2_2_2" maxChoices="1" responseIdentifier="CHOICE_RESPONSE_10" shuffle="false">
+	<simpleChoice identifier="CHOICE_RESPONSE_10_0">True	</simpleChoice>
+	<simpleChoice identifier="CHOICE_RESPONSE_10_1">False	</simpleChoice>
+</choiceInteraction>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>			
+<group class="grid_2x50" id="dummy1_5">
+	<div class="t2x50">
+		<div class="w100perc">
+			<div class="w50perc">
+				<div class="inner">
+					<group id="dummy1_5_1">
+	<audioPlayer class="player_progress" data="media/y7_u06_p4_007au.mp3" id="dummy1_5_1_1">
+<source src="media/y7_u06_p4_007au.mp3" type="audio/mp4"/>		<template>
+		<div class="player player-progress">
+			<mediaPlayPauseButton id="mediaPlayPauseButton"/>
+			<mediaProgressBar id="mediaProgressBar"/>	
+			<mediaPositinInStream class="media-time" id="mediaPositinInStream"/>
+						
+		</div>
+		</template>
+	</audioPlayer>			
+<group class="grid_2x50_noline" id="dummy1_5_1_2">
+	<div class="t2x50-noline">
+		<div class="w100perc">
+			<div class="w50perc noline">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_5_1_2_1" src="media/y7_u06_p4_006i.jpg" srcFullScreen="media/y7_u06_p4_006i_f.jpg">
+</img>
+				</div>	
+			</div>
+			<div class="w50perc noline">
+				<div class="inner">
+					<choiceInteraction id="dummy1_5_1_2_2" maxChoices="1" responseIdentifier="CHOICE_RESPONSE_11" shuffle="false">
+	<simpleChoice identifier="CHOICE_RESPONSE_11_0">True	</simpleChoice>
+	<simpleChoice identifier="CHOICE_RESPONSE_11_1">False	</simpleChoice>
+</choiceInteraction>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+				</div>	
+			</div>
+			<div class="w50perc">
+				<div class="inner">
+					<group id="dummy1_5_2">
+	<audioPlayer class="player_progress" data="media/y7_u06_p4_008au.mp3" id="dummy1_5_2_1">
+<source src="media/y7_u06_p4_008au.mp3" type="audio/mp4"/>		<template>
+		<div class="player player-progress">
+			<mediaPlayPauseButton id="mediaPlayPauseButton"/>
+			<mediaProgressBar id="mediaProgressBar"/>	
+			<mediaPositinInStream class="media-time" id="mediaPositinInStream"/>
+						
+		</div>
+		</template>
+	</audioPlayer>			
+<group class="grid_2x50_noline" id="dummy1_5_2_2">
+	<div class="t2x50-noline">
+		<div class="w100perc">
+			<div class="w50perc noline">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_5_2_2_1" src="media/y7_u06_p4_006i.jpg" srcFullScreen="media/y7_u06_p4_006i_f.jpg">
+</img>
+				</div>	
+			</div>
+			<div class="w50perc noline">
+				<div class="inner">
+					<choiceInteraction id="dummy1_5_2_2_2" maxChoices="1" responseIdentifier="CHOICE_RESPONSE_12" shuffle="false">
+	<simpleChoice identifier="CHOICE_RESPONSE_12_0">True	</simpleChoice>
+	<simpleChoice identifier="CHOICE_RESPONSE_12_1">False	</simpleChoice>
+</choiceInteraction>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	   	<div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

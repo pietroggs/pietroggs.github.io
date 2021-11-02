@@ -6,6 +6,8 @@ var timing = false;
 // Code
 var txt_infos;
 var isLms = true;
+var report_data = "";
+const notFix = ["Main input", "Practice 1", "Practice 2", "Practice 4", "Practice 5", "English to take away"];
 
 function init() {
     // Wait
@@ -20,10 +22,10 @@ function init() {
                 isLms = false;
             }
             clearInterval(waitForLoad);
-            initListners();
             insertLogo();
-        }
-        else {
+            //createReport();
+            initListners();
+        } else {
             return;
         }
     }, 500)
@@ -40,28 +42,33 @@ function initListners() {
     // Get Scorm
     script_scorm.getSuspend();
 
-    // Close Btn
-    // var close_btn = document.querySelector('.home-button-main');
-    // close_btn.onclick = function () {
-    //     script_scorm.end();
-    //     window.close();
-    // }
-    // close_btn.style.cssText = "display:none;";
+    // Update report
+    // var reportListner = setInterval(function () {
+    //     if (report_data != window.player.getLessonJSONReport()) {
+    //         //createReport();
+    //     }
+    // }, 1000);
 
     // Pontuação
     var waitForComplet = setInterval(function () {
-        if (window.player.getScore() == window.player.getScoreMax()) {
-            log("Page is Done");
-            script_scorm.complet();
-            clearInterval(waitForComplet);
-            if (!timing) {
-                script_scorm.end();
+        try {
+            if (window.player.getScore() == window.player.getScoreMax()) {
+                log("Page is Done");
+                script_scorm.complet();
+                clearInterval(waitForComplet);
+                if (!timing) {
+                    script_scorm.end();
+                }
             }
+        } catch (error) {
+            console.log("EL ERROR: " + error);
         }
-    }, 500);
+    }, 1000);
 
     // Opens
-    setTimeout(function () { data_scorm["opens"] += 1; }, 1000);
+    setTimeout(function () {
+        data_scorm["opens"] += 1;
+    }, 1000);
 
     // Time
     var countTimePass = setInterval(function () {
@@ -112,8 +119,7 @@ var script_scorm = {
                 susp = susp.split(";");
                 data_scorm["opens"] += parseInt(susp[0]);
                 data_scorm["seconds"] += parseInt(susp[1]);
-            }
-            else {
+            } else {
                 susp = null;
                 log('No susp Avaible');
             }
@@ -160,19 +166,64 @@ function log(text) {
 }
 
 function insertLogo() {
-    var target_div = document.querySelector('.lesson-mainfooter');
-    target_div.style.overflow = "visible";
-    var svg_logo = document.createElement('div');
-    svg_logo.id = 'svg_logo';
-
     // CSS
     var logo_style = document.createElement('style');
     logo_style.type = 'text/css';
-    logo_style.innerHTML = '#svg_logo {display: inline-block;background: url(img/standfor-logo.svg) no-repeat center center transparent;background-size: 100px 100px;width: 100px;height: 100px;position: absolute;bottom: 0px;right: 15px;}';
+    logo_style.innerHTML = ".emp_copyright-button{cursor: default;} .emp_copyright-button *{cursor: default;} .quest_mag{margin-left: 68px; margin-top: 12px;} .quest_mag2{margin-left: 68px; margin-top: 2px;}";
     document.getElementsByTagName('head')[0].appendChild(logo_style);
-
-    target_div.appendChild(svg_logo);
 }
 
+var report = {};
+const ignoreScreens = ['Content', 'Report', 'Credits'];
+
+function createReport() {
+    report_data = window.player.getLessonJSONReport();
+    let obj = JSON.parse(report_data);
+    let t_s = 0;
+    let t_m = 0;
+    Object.keys(obj.items).forEach((element, index) => {
+        let x = obj.items[element];
+        if (!ignoreScreens.includes(x.title)) {
+            let co = "orange";
+            let sc = 0;
+            let ms = 0;
+            let has = true;
+
+            notFix.includes(x.title) ? sc = parseInt(x.result.done) : sc = parseInt(x.result.done + x.result.errors);
+            ms = parseInt(x.result.todo);
+            x.result.todo != 0 ? has = true : has = false;
+            switch (x.title.substring(0, 4)) {
+                case 'Lead':
+                    co = 'orange';
+                    break;
+                case 'Main':
+                    co = 'pink';
+                    break;
+                case 'Prac':
+                    co = 'purple';
+                    break;
+                case 'Engl':
+                    co = 'blue';
+                    break;
+            }
+
+            report[x.title] = {
+                "color": co,
+                "score": sc,
+                "maxScore": ms,
+                "hasScore": has,
+            }
+            t_s += sc;
+            t_m += ms;
+        }
+    });
+    report["Total"] = {
+        "color": "gray",
+        "score": t_s,
+        "maxScore": t_m,
+        "hasScore": true
+    }
+    // console.log(report);
+}
 
 init();

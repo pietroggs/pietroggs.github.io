@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentTest compilerVersion="3.3.2.188" gtm="true" identifer="Lesson 6 – Strike a pose!" playerVersion="1.8.0" title="Strike a pose!">
+				
+		<testView href="common/lesson.emp.xml"/>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+	<general>
+		<keyword><string>belt</string></keyword>
+		<keyword><string>coat</string></keyword>
+		<keyword><string>dress</string></keyword>
+		<keyword><string>gloves</string></keyword>
+		<keyword><string>hat</string></keyword>
+		<keyword><string>put on</string></keyword>
+		<keyword><string>ring</string></keyword>
+		<keyword><string>scarf</string></keyword>
+		<keyword><string>shirt</string></keyword>
+		<keyword><string>shoes</string></keyword>
+		<keyword><string>shorts</string></keyword>
+		<keyword><string>socks</string></keyword>
+		<keyword><string>take off</string></keyword>
+		<keyword><string>trousers</string></keyword>
+		<keyword><string>T-shirt</string></keyword>
+		<keyword><string>uniform</string></keyword>
+		<title><string>Strike a pose!</string></title>
+	</general>
+	<educational>
+		<description><string>Learning goals:
+1. Using present continuous
+2. Revision of forms including negative, interrogative and short answers
+3. Asking about and describing what people are wearing
+4. Recognising and producing clothes vocabulary</string></description>
+	</educational>
+</lom>
+	<styleDeclaration>
+		<link href="common/default.css" userAgent=".*"/>
+	</styleDeclaration>
+	<variableProcessing template="default"/>
+
+	<outcomeDeclaration cardinality="single" identifier="DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+	<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+	<outcomeDeclaration cardinality="single" identifier="RESET"/>
+	<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+
+	<testPart>
+		<assessmentSection>
+			<assessmentItemRef class="page_toc" href="script_00006/script_00006_000.emp.xml" identifier="ITEM_000"/>
+			<assessmentItemRef class="page_leadin_visited" href="script_00006/script_00006_001.emp.xml" identifier="ITEM_001"/>
+			<assessmentItemRef class="page_maininput" href="script_00006/script_00006_002.emp.xml" identifier="ITEM_002"/>
+			<assessmentItemRef class="page_practice" href="script_00006/script_00006_003.emp.xml" identifier="ITEM_003"/>
+			<assessmentItemRef class="page_practice" href="script_00006/script_00006_004.emp.xml" identifier="ITEM_004"/>
+			<assessmentItemRef class="page_practice" href="script_00006/script_00006_005.emp.xml" identifier="ITEM_005"/>
+			<assessmentItemRef class="page_practice" href="script_00006/script_00006_006.emp.xml" identifier="ITEM_006"/>
+			<assessmentItemRef class="page_practice" href="script_00006/script_00006_007.emp.xml" identifier="ITEM_007"/>
+			<assessmentItemRef class="page_eta" href="script_00006/script_00006_008.emp.xml" identifier="ITEM_008"/>
+			<assessmentItemRef class="page_report" href="script_00006/script_00006_009.emp.xml" identifier="ITEM_009"/>
+			<assessmentItemRef class="page_report" href="./newassets/script_1.emp.xml" identifier="ITEM_009"/>
+		</assessmentSection>
+	</testPart>
+</assessmentTest>

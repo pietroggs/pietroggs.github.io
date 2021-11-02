@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_003" playerVersion="1.8.0" timeDependent="false" title="Practice 1">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>4</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_1">
+					<correctResponse>
+						<value forIndex="0">-1858697828</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_2-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_2-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_2-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_2-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_2-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_2-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_2-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_2-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_2">
+					<correctResponse>
+						<value forIndex="0">1814526716</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_3-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_3-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_3-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_3-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_3-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_3-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_3-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_3-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_3">
+					<correctResponse>
+						<value forIndex="0">215872101</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_4-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_4-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_4-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_4-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_4-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_4-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_4-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_4-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_4">
+					<correctResponse>
+						<value forIndex="0">146922369</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-practice">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><shape class="home-button"/></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u06_p3_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u06_p3_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Read and choose the correct answer.</simpleText>
+			</div>
+</group>			
+<group class="grid_3x33" id="dummy1_2">
+	<div class="t3x33">
+		<div class="w100perc">
+			<div class="w33perc">
+				<div class="inner">
+					<group id="dummy1_2_1">
+	<img class="colorline" fullscreenMode="magnific" id="dummy1_2_1_1" src="media/y7_u06_p3_001i.jpg" srcFullScreen="media/y7_u06_p3_001i_f.jpg">
+</img>			
+<simpleText id="dummy1_2_1_2" class="drop-word">
+He's wearing shorts and a T-shirt.</simpleText>
+</group>
+				</div>		
+			</div>
+			<div class="w33perc">
+				<div class="inner">
+					<group id="dummy1_2_2">
+	<img class="colorline" fullscreenMode="magnific" id="dummy1_2_2_1" src="media/y7_u06_p3_002i.jpg" srcFullScreen="media/y7_u06_p3_002i_f.jpg">
+</img>			
+<simpleText id="dummy1_2_2_2">
+He isn't wearing anything special.</simpleText>
+</group>
+				</div>		
+			</div>
+			<div class="w33perc">
+				<div class="inner">
+					<group id="dummy1_2_3">
+	<img class="colorline" fullscreenMode="magnific" id="dummy1_2_3_1" src="media/y7_u06_p3_003i.jpg" srcFullScreen="media/y7_u06_p3_003i_f.jpg">
+</img>			
+<simpleText id="dummy1_2_3_2">
+Is he coming out?</simpleText>
+</group>
+				</div>
+			</div>
+		</div>
+	</div>
+</group>			
+<group class="grammar_box" id="dummy1_3">
+	<div class="grammar-box">
+	<div class="col-md-12">
+		<simpleText class="grammar-title" id="dummy1_3_1">
+Present Continuous</simpleText>
+	</div>
+	<div class="col-md-12 align-hc">
+		<table class="grammar-table" id="dummy1_3_2">
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+	<tr>
+		<td>
+
+<textInteraction id="dummy1_3_2_x0y0">
+<span>We use present continuous for </span>		<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_1" shuffle="true">
+			<inlineChoice identifier="1190078809">habits and routines</inlineChoice>
+			<inlineChoice identifier="-1858697828">what is happening now</inlineChoice>
+		</inlineChoiceInteraction><span>.
+<br/>
+			We form the present continuous with </span>		<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_2" shuffle="true">
+			<inlineChoice identifier="1814526716">is/are + ing</inlineChoice>
+			<inlineChoice identifier="-1604035003">is/are + ed</inlineChoice>
+		</inlineChoiceInteraction><span>.
+<br/>
+			We make negative sentences by adding </span>		<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_3" shuffle="true">
+			<inlineChoice identifier="1629623203">don't/doesn't</inlineChoice>
+			<inlineChoice identifier="215872101">isn't/aren't</inlineChoice>
+		</inlineChoiceInteraction><span>.
+<br/>
+			We form yes/no questions with </span>		<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_4" shuffle="true">
+			<inlineChoice identifier="146922369">is/are + you/he/she + ing</inlineChoice>
+			<inlineChoice identifier="459185676">wh- words (who, why, where etc) + is/are + ing</inlineChoice>
+		</inlineChoiceInteraction><span>.</span></textInteraction>		</td>
+	</tr>
+</table>
+
+	</div>
+	<div class="col-md-12 align-hc">
+		<!-- cannot find module for dummy 'dummy3'!-->
+		</div>
+	<div class="col-md-12 align-hc">
+		<!-- cannot find module for dummy 'dummy4'!-->
+		</div>
+	<div class="col-md-12 align-hc">
+		<!-- cannot find module for dummy 'dummy5'!-->
+		</div>
+	<div class="col-md-12 align-hc">
+		<!-- cannot find module for dummy 'dummy6'!-->
+		</div>
+	<div class="col-md-12 align-hc">
+		<!-- cannot find module for dummy 'dummy7'!-->
+		</div>
+	<div class="col-md-12 align-hc">
+		<!-- cannot find module for dummy 'dummy8'!-->
+		</div>
+	<div class="col-md-12 align-hc">
+		<!-- cannot find module for dummy 'dummy9'!-->
+		</div>
+	<div class="col-md-12 align-hc">
+		<!-- cannot find module for dummy 'dummy10'!-->
+	</div>
+</div>
+</group>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	   	<div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

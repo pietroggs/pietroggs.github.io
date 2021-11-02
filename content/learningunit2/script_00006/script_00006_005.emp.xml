@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_005" playerVersion="1.8.0" timeDependent="false" title="Practice 3">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>5</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CONNECTION_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CONNECTION_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CONNECTION_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CONNECTION_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CONNECTION_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CONNECTION_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CONNECTION_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CONNECTION_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="multiple" checkMode="default" countMode="correctAnswers" evaluate="user" identifier="CONNECTION_RESPONSE_1">
+					<correctResponse>
+						<value>CONNECTION_RESPONSE_1_0 CONNECTION_RESPONSE_1_1</value>
+						<value>CONNECTION_RESPONSE_1_3 CONNECTION_RESPONSE_1_4</value>
+						<value>CONNECTION_RESPONSE_1_6 CONNECTION_RESPONSE_1_7</value>
+						<value>CONNECTION_RESPONSE_1_9 CONNECTION_RESPONSE_1_10</value>
+						<value>CONNECTION_RESPONSE_1_12 CONNECTION_RESPONSE_1_13</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-practice">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><shape class="home-button"/></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u06_p5_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u06_p5_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Read and match the sentence halves.</simpleText>
+			</div>
+</group>			
+<matchInteraction class="horizontal item-5" id="dummy1_2" responseIdentifier="CONNECTION_RESPONSE_1" shuffle="true">
+	<simpleMatchSet>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_0" matchMax="1">
+Harry	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_3" matchMax="1">
+They	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_6" matchMax="1">
+Emma	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_9" matchMax="1">
+I	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_12" matchMax="1">
+You	</simpleAssociableChoice>
+	</simpleMatchSet>
+	<simpleMatchSet>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_1" matchMax="1">
+is wearing trousers and a shirt.	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_4" matchMax="1">
+are wearing dresses and hats.	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_7" matchMax="1">
+is wearing a coat and a ring.	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_10" matchMax="1">
+am wearing shorts and a T-shirt.	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_13" matchMax="1">
+are wearing a school uniform.	</simpleAssociableChoice>
+	</simpleMatchSet>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</matchInteraction>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	   	<div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

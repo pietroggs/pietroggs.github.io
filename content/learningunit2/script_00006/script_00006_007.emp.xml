@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_007" playerVersion="1.8.0" timeDependent="false" title="Practice 5">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/><link href="../common/dialog.css" userAgent=".*"/><link href="../common/clouds.css" userAgent=".*"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>10</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_1">
+					<correctResponse>
+						<value forIndex="0">'s wearing</value>
+						<value forIndex="0">is wearing</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_10-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_10-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_10-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_10-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_10-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_10-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_10-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_10-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_10">
+					<correctResponse>
+						<value forIndex="0">'m not</value>
+						<value forIndex="0">am not</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_2-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_2-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_2">
+					<correctResponse>
+						<value forIndex="0">Is Harry</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_3-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_3-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_3">
+					<correctResponse>
+						<value forIndex="0">'m wearing</value>
+						<value forIndex="0">am wearing</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_4-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_4-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_4-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_4-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_4-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_4-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_4-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_4-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_4">
+					<correctResponse>
+						<value forIndex="0">aren't wearing</value>
+						<value forIndex="0">are not wearing</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_5-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_5-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_5-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_5-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_5-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_5-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_5-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_5-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_5">
+					<correctResponse>
+						<value forIndex="0">'re wearing</value>
+						<value forIndex="0">are wearing</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_6-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_6-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_6-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_6-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_6-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_6-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_6-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_6-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_6">
+					<correctResponse>
+						<value forIndex="0">'m wearing</value>
+						<value forIndex="0">am wearing</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_7-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_7-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_7-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_7-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_7-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_7-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_7-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_7-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_7">
+					<correctResponse>
+						<value forIndex="0">are they</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_8-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_8-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_8-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_8-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_8-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_8-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_8-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_8-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_8">
+					<correctResponse>
+						<value forIndex="0">isn't wearing</value>
+						<value forIndex="0">is not wearing</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_9-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_9-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_9-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_9-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_9-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_9-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_9-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_9-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_9">
+					<correctResponse>
+						<value forIndex="0">she's not</value>
+						<value forIndex="0">she is not</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-practice">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><shape class="home-button"/></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u06_p7_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u06_p7_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Listen and write. Then say the sentences.</simpleText>
+			</div>
+</group>			
+<group class="dialog" id="dummy1_2">
+	<div class="dialog-main">
+		<group class="orange dialog-left" id="dummy1_2_1">
+	<group class="lt" id="dummy1_2_1_1">
+	<div class="tick"/>
+		<group id="dummy1_2_1_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_001au.mp3" id="dummy1_2_1_1_1_1">
+<source src="media/y7_u06_p7_001au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_1_1_1_2">
+<span><b>Emma:</b> William </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_1"/><span> a shirt.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_2_2">
+	<group class="rt" id="dummy1_2_2_1">
+	<div class="tick"/>
+		<group id="dummy1_2_2_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_014au.mp3" id="dummy1_2_2_1_1_1">
+<source src="media/y7_u06_p7_014au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_2_1_1_2">
+<span><b>Commentator:</b> </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_2"/><span> wearing a school uniform?</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-right" id="dummy1_2_3">
+	<group class="rt" id="dummy1_2_3_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_3_1_1">
+<b>Kate:</b> Yes, he is.</simpleText>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_4">
+	<group class="lt" id="dummy1_2_4_1">
+	<div class="tick"/>
+		<group id="dummy1_2_4_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_004au.mp3" id="dummy1_2_4_1_1_1">
+<source src="media/y7_u06_p7_004au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_4_1_1_2">
+<span><b>Emma:</b> I </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_3"/><span> a hat and gloves.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_5">
+	<group class="lt" id="dummy1_2_5_1">
+	<div class="tick"/>
+		<group id="dummy1_2_5_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_005au.mp3" id="dummy1_2_5_1_1_1">
+<source src="media/y7_u06_p7_005au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_5_1_1_2">
+<span><b>William:</b> Kate and Emma </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_4"/><span> dresses.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_6">
+	<group class="lt" id="dummy1_2_6_1">
+	<div class="tick"/>
+		<group id="dummy1_2_6_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_006au.mp3" id="dummy1_2_6_1_1_1">
+<source src="media/y7_u06_p7_006au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_6_1_1_2">
+<span><b>Emma:</b> We </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_5"/><span> T-shirts.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_7">
+	<group class="lt" id="dummy1_2_7_1">
+	<div class="tick"/>
+		<group id="dummy1_2_7_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_007au.mp3" id="dummy1_2_7_1_1_1">
+<source src="media/y7_u06_p7_007au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_7_1_1_2">
+<span><b>William:</b> I </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_6"/><span> shorts and socks.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_2_8">
+	<group class="rt" id="dummy1_2_8_1">
+	<div class="tick"/>
+		<group id="dummy1_2_8_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_015au.mp3" id="dummy1_2_8_1_1_1">
+<source src="media/y7_u06_p7_015au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_8_1_1_2">
+<span><b>Commentator:</b> What </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_7"/><span> wearing?</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="blue dialog-right" id="dummy1_2_9">
+	<group class="rt" id="dummy1_2_9_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_9_1_1">
+<b>Harry:</b> They're wearing school uniforms.</simpleText>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_10">
+	<group class="lt" id="dummy1_2_10_1">
+	<div class="tick"/>
+		<group id="dummy1_2_10_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_010au.mp3" id="dummy1_2_10_1_1_1">
+<source src="media/y7_u06_p7_010au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_10_1_1_2">
+<span><b>Kate:</b> Harry </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_8"/><span> shoes.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_2_11">
+	<group class="rt" id="dummy1_2_11_1">
+	<div class="tick"/>
+		<group id="dummy1_2_11_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_016au.mp3" id="dummy1_2_11_1_1_1">
+<source src="media/y7_u06_p7_016au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_11_1_1_2">
+<span><b>Commentator:</b> Is Emma wearing a ring?</span></textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-right" id="dummy1_2_12">
+	<group class="rt" id="dummy1_2_12_1">
+	<div class="tick"/>
+		<textInteraction id="dummy1_2_12_1_1">
+<span><b>William:</b> No, </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_9"/><span>.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+		<group class="blue dialog-left" id="dummy1_2_13">
+	<group class="lt" id="dummy1_2_13_1">
+	<div class="tick"/>
+		<group id="dummy1_2_13_1_1">
+	<audioPlayer class="a_player" data="media/y7_u06_p7_013au.mp3" id="dummy1_2_13_1_1_1">
+<source src="media/y7_u06_p7_013au.mp3" type="audio/mp4"/>	</audioPlayer>			
+<textInteraction id="dummy1_2_13_1_1_2">
+<span><b>Harry:</b> I </span><textEntryInteraction responseIdentifier="EDIT_RESPONSE_10"/><span> wearing anything special.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<!-- cannot find module for dummy 'dummy14'!-->
+		<!-- cannot find module for dummy 'dummy15'!-->
+		<!-- cannot find module for dummy 'dummy16'!-->
+		<!-- cannot find module for dummy 'dummy17'!-->
+		<!-- cannot find module for dummy 'dummy18'!-->
+		<!-- cannot find module for dummy 'dummy19'!-->
+		<!-- cannot find module for dummy 'dummy20'!-->
+		<!-- cannot find module for dummy 'dummy21'!-->	
+		<!-- cannot find module for dummy 'dummy22'!-->
+		<!-- cannot find module for dummy 'dummy23'!-->
+		<!-- cannot find module for dummy 'dummy24'!-->
+		<!-- cannot find module for dummy 'dummy25'!-->
+		<!-- cannot find module for dummy 'dummy26'!-->
+		<!-- cannot find module for dummy 'dummy27'!-->
+		<!-- cannot find module for dummy 'dummy28'!-->
+		<!-- cannot find module for dummy 'dummy29'!-->
+		<!-- cannot find module for dummy 'dummy30'!-->
+		<!-- cannot find module for dummy 'dummy31'!-->
+		<!-- cannot find module for dummy 'dummy32'!-->
+		<!-- cannot find module for dummy 'dummy33'!-->
+		<!-- cannot find module for dummy 'dummy34'!-->
+		<!-- cannot find module for dummy 'dummy35'!-->
+	</div>
+</group>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	   	<div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>
