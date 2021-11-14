@@ -1,0 +1,56 @@
+/* CSS :: DEBUGGER */
+#debugLayer {
+  position: absolute;
+  width: 10%;
+  height: 0%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  z-index: 999;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#debugLayer .btFechar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#debugLayer .btCopyLog {
+  position: absolute;
+  top: 10px;
+  left: 80px;
+}
+
+#debugLayer #contDebug {
+  position: absolute;
+  top: 50px;
+  left: 12px;
+  width: 82%;
+  height: 83%;
+  overflow: auto;
+}
+
+
+/* INDEX.HTML :: DEBUGGER */
+<div id="debugLayer"></div>
+
+<script type="text/javascript" src="content/js/debugger.js"></script>
+<script>
+	/** CHECK IOS */
+	var isIOS = /^(iPhone|iPad|iPod)/.test(navigator.platform);
+
+	if(isIOS){
+		
+	}
+	/** CHECK IOS */
+
+	/** JS ERRORS LOG */
+	window.onerror = function (err, url, line) {
+
+		parent.debugLog("!!! JS ERROR: " + err + " | " + url + " | " + line, 0); // parent.debugLog(content, from[0=log, 1=content])
+		return false;
+	}
+	/** JS ERRORS LOG */
+</script>
