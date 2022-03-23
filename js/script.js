@@ -1,229 +1,160 @@
-// Solução Exportação de cursos Mói 11/20 by: pietroggsilva@gmail.com
-// Config
-var debug = true;
-var timing = false;
-
-// Code
-var txt_infos;
-var isLms = true;
-var report_data = "";
-const notFix = ["Main input", "Practice 1", "Practice 2", "Practice 4", "Practice 5", "English to take away"];
-
-function init() {
-    // Wait
-    var waitForLoad = setInterval(function () {
-        txt_infos = document.querySelectorAll('.qp-info-text');
-        if (txt_infos.length) {
-            log('Page Is Ready');
-            try {
-                script_scorm.init();
-            } catch (error) {
-                log("Page is not in Scorm Platform");
-                isLms = false;
-            }
-            clearInterval(waitForLoad);
-            insertLogo();
-            //createReport();
-            initListners();
-        } else {
-            return;
-        }
-    }, 500)
-
+async function init() {
+  await calcScale();
 }
 
-function initListners() {
+//#region game
+var pos_x = [20, 35, 50, 65, 80];
+var last_pos = 0;
+var cicle_counter = 0;
+const game = {
+  tela: null,
+  interval: null,
+  spwan: 0,
+  cicle: 8,
+  dif: 8,
+  speed: 50,
+  running: true,
+  init: (e) => {
+    game.running = true;
+    playAudio("./sounds/hit.wav", 0.5);
+    e.style.display = "none";
+    if (game.tela == null) {
+      game.tela = document.querySelector("main");
+    }
+    game.interval = setInterval(() => {
+      //Aumenta dificuldade
+      if (game.spwan == 5 && game.speed < 150) {
+        game.spwan = 0;
+        game.speed += 25;
+        console.log("speed", game.speed);
+      } else if (game.spwan == 5 && game.dif > 2) {
+        game.spwan = 0;
+        game.dif -= 1;
+        console.log("dif", game.dif);
+      }
+      //Spawn
+      game.cicle--;
+      if (game.cicle == 0) {
+        game.cicle = game.dif;
+        game.spawnTarget(game.speed);
+      }
+    }, 250);
+  },
 
-    // Unload Prevent
-    window.onbeforeunload = function () {
-        script_scorm.end();
+  spawnTarget: (speed) => {
+    game.spwan++;
+    //set
+    let tg = document.createElement("img");
+    tg.src = "./img/celular.png";
+    tg.className = "target pointer";
+    tg.style.top = "15%";
+    tg.draggable = false;
+    if (pos_x.length == 0) {
+      pos_x = [20, 35, 50, 65, 80];
+    }
+    let tg_left = pos_x.splice(randomNumber(0, pos_x.length - 1), 1);
+    if (tg_left == last_pos)
+      tg_left = pos_x.splice(randomNumber(0, pos_x.length - 1), 1);
+    last_pos = tg_left;
+    tg.style.left = `${tg_left}%`;
+
+    //move
+    let sp = 200 - speed;
+    anim.fadeIn(tg, 0.5);
+    let down_int = setInterval(() => {
+      // console.log(tg.style.top)
+      if (parseInt(tg.style.top) < 90) {
+        tg.style.top = `${parseInt(tg.style.top) + 1}% `;
+      } else {
+        anim.sizeDown(tg);
+        game.blockTarget(tg, down_int);
+        header.hit();
+      }
+    }, sp);
+
+    //click
+    tg.onclick = (tg) => {
+      game.blockTarget(tg.target, down_int);
+      anim.fadeOut(tg.target);
+      header.pontuar();
     };
 
-    // Get Scorm
-    script_scorm.getSuspend();
+    //input
+    game.tela.appendChild(tg);
+  },
 
-    // Update report
-    // var reportListner = setInterval(function () {
-    //     if (report_data != window.player.getLessonJSONReport()) {
-    //         //createReport();
-    //     }
-    // }, 1000);
+  blockTarget: (e, int) => {
+    e.onclick = null;
+    e.classList.remove("pointer");
+    int != null ? clearInterval(int) : null;
+    setTimeout(() => {
+      game.tela.removeChild(e);
+    }, 500);
+  },
+};
+//#endregion
 
-    // Pontuação
-    var waitForComplet = setInterval(function () {
-        try {
-            if (window.player.getScore() == window.player.getScoreMax()) {
-                log("Page is Done");
-                script_scorm.complet();
-                clearInterval(waitForComplet);
-                if (!timing) {
-                    script_scorm.end();
-                }
-            }
-        } catch (error) {
-            console.log("EL ERROR: " + error);
-        }
-    }, 1000);
-
-    // Opens
-    setTimeout(function () {
-        data_scorm["opens"] += 1;
-    }, 1000);
-
-    // Time
-    var countTimePass = setInterval(function () {
-        data_scorm["seconds"] += 15;
-        var sessionTime = formatScormTime(Math.round(data_scorm["seconds"]));
-        script_scorm.setSupend(sessionTime);
-    }, 15000);
-}
-
-var susp = null;
-
-var data_scorm = {
-    opens: 0,
-    seconds: 0,
-}
-
-var script_scorm = {
-    init: function () {
-        if (!isLms) {
-            return;
-        }
-        log("Script_Scorm: init");
-        window.parent.API.LMSInitialize('');
-        window.parent.API.LMSSetValue('cmi.core.score.min', '0');
-        window.parent.API.LMSSetValue('cmi.core.score.max', '100');
-        window.parent.API.LMSCommit('');
-    },
-
-    complet: function () {
-        if (!isLms) {
-            return;
-        }
-        log("Script_Scorm: complet");
-        window.parent.API.LMSSetValue('cmi.core.lesson_status', 'completed');
-        window.parent.API.LMSSetValue('cmi.core.score.raw', '100');
-        window.parent.API.LMSCommit('');
-    },
-
-    getSuspend: function () {
-        if (!isLms) {
-            return;
-        }
-        log("Script_Scorm: getSuspend");
-        try {
-            susp = window.parent.API.LMSGetValue('cmi.suspend_data');
-            log("Get Suspend_Data: " + [susp]);
-            if (susp != "" && susp != null) {
-                susp = susp.split(";");
-                data_scorm["opens"] += parseInt(susp[0]);
-                data_scorm["seconds"] += parseInt(susp[1]);
-            } else {
-                susp = null;
-                log('No susp Avaible');
-            }
-        } catch (err) {
-
-        }
-    },
-
-    setSupend: function (timeArg) {
-        if (!isLms) {
-            return;
-        }
-        log("Script_Scorm: setSupend");
-        if (timing) {
-            window.parent.API.LMSSetValue("cmi.core.session_time", timeArg);
-        }
-        var pivSusp = data_scorm["opens"] + ";" + data_scorm["seconds"];
-        pivSusp = pivSusp.toString();
-        window.parent.API.LMSSetValue("cmi.suspend_data", pivSusp);
-        window.parent.API.LMSCommit('');
-    },
-
-    end: function () {
-        if (!isLms) {
-            return;
-        }
-        log("Script_Scorm: end");
-        try {
-            window.parent.API.LMSCommit('');
-            window.parent.API.LMSFinish('');
-            clearInterval(countTimePass);
-            isLms = false;
-        } catch (err) {
-            log("Scorm já encerrado");
-            isLms = false;
-        }
+//#region Header
+const header = {
+  vidas: 5,
+  pontos: 0,
+  pontos_html: null,
+  vidas_html: null,
+  block: null,
+  pontuar: () => {
+    if (header.pontos_html == null) {
+      header.pontos_html = document.querySelector(".pontos");
     }
-}
-
-function log(text) {
-    if (debug) {
-        console.log('%c' + '>>>' + text + '<<<', 'color:#0080ff;font-weight: bold;');
+    header.pontos += 10;
+    header.pontos_html.innerText = header.pontos;
+    playAudio("./sounds/hit.wav", 0.3);
+  },
+  hit: () => {
+    if (header.vidas_html == null) {
+      header.vidas_html = document.querySelector(".lifes");
     }
-}
-
-function insertLogo() {
-    // CSS
-    var logo_style = document.createElement('style');
-    logo_style.type = 'text/css';
-    logo_style.innerHTML = ".emp_copyright-button{cursor: default;} .emp_copyright-button *{cursor: default;} .quest_mag{margin-left: 68px; margin-top: 12px;} .quest_mag2{margin-left: 68px; margin-top: 2px;}";
-    document.getElementsByTagName('head')[0].appendChild(logo_style);
-}
-
-var report = {};
-const ignoreScreens = ['Content', 'Report', 'Credits'];
-
-function createReport() {
-    report_data = window.player.getLessonJSONReport();
-    let obj = JSON.parse(report_data);
-    let t_s = 0;
-    let t_m = 0;
-    Object.keys(obj.items).forEach((element, index) => {
-        let x = obj.items[element];
-        if (!ignoreScreens.includes(x.title)) {
-            let co = "orange";
-            let sc = 0;
-            let ms = 0;
-            let has = true;
-
-            notFix.includes(x.title) ? sc = parseInt(x.result.done) : sc = parseInt(x.result.done + x.result.errors);
-            ms = parseInt(x.result.todo);
-            x.result.todo != 0 ? has = true : has = false;
-            switch (x.title.substring(0, 4)) {
-                case 'Lead':
-                    co = 'orange';
-                    break;
-                case 'Main':
-                    co = 'pink';
-                    break;
-                case 'Prac':
-                    co = 'purple';
-                    break;
-                case 'Engl':
-                    co = 'blue';
-                    break;
-            }
-
-            report[x.title] = {
-                "color": co,
-                "score": sc,
-                "maxScore": ms,
-                "hasScore": has,
-            }
-            t_s += sc;
-            t_m += ms;
-        }
-    });
-    report["Total"] = {
-        "color": "gray",
-        "score": t_s,
-        "maxScore": t_m,
-        "hasScore": true
+    header.vidas--;
+    if (header.vidas <= 0) {
+      if (header.block == null) {
+        header.block = document.querySelector(".block");
+      }
+      if (game.running) playAudio("./sounds/end.wav", 0.5);
+      game.running = false;
+      clearInterval(game.interval);
+      document.querySelector(
+        ".block-p2"
+      ).innerHTML = `Pontos: <br /><br /> ${header.pontos}`;
+      header.block.style.display = "block";
     }
-    // console.log(report);
-}
+    if (game.running){
+        header.vidas_html.innerText = header.vidas;
+        playAudio("./sounds/fail.wav", 0.5); 
+    } 
+  },
+  restart: () => {
+    header.pontos = 0;
+    header.pontos_html.innerText = header.pontos;
+    header.vidas = 5;
+    header.vidas_html.innerText = header.vidas;
+    game.cicle = 8;
+    game.dif = 8;
+    game.speed = 50;
+    header.block.style.display = "none";
+  },
+};
 
-init();
+//#endregion
+
+//#region Animação
+const anim = {
+  fadeOut: (e) => {
+    gsap.to(e, { autoAlpha: 0, duration: 0.5 });
+  },
+  fadeIn: (e, time) => {
+    gsap.from(e, { autoAlpha: 0, duration: time });
+  },
+  sizeDown: (e) => {
+    gsap.to(e, { scale: 0.5, autoAlpha: 0, duration: 0.5 });
+  },
+};
+//#endregion
