@@ -1,44 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vivo_Game</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <body style="margin: 0; overflow: hidden;">
+        <a-scene
+            vr-mode-ui="enabled: false;"
+            loading-screen="enabled: false;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            id="scene"
+            embedded
+            gesture-detector
+        >
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-image
+                    src="assets/asset.jpeg"
+                    scale="1 1 1"
+                    class="clickable"
+                    rotation="-90 0 0"
+                    gesture-handler
+                ></a-image>
+            </a-marker>
 
-<body>
-  <div id="container">
-    <img src="img/moldura.png" alt="" class="frame">
-    <header>
-      <img src="img/hearth.png" alt="" class="hearth">
-      <p class="lifes">5</p>
-      <p class="pontos">0</p>
-    </header>
-    <div class="bg">
-      <img src="img/bg.jpg" alt="">
-    </div>
-    <main>
-      <div class="block" style="display: none;">
-        <p class="block-p1">UHUL!</p>
-        <p class="block-p2">Pontos: <br /><br /> 50</p>
-        <button class="res" onclick="header.restart()">
-          De Novo!
-        </button>
-      </div>
-    </main>
-    <button class="start" onclick="game.init(this)">
-      Start
-    </button>
-  </div>
-
-  <script src="js/jquery_min_3_6.js"></script>
-  <script src="js/gsap.min.js"></script>
-  <script src="js/utils.js"></script>
-  <script src="js/script.js"></script>
-  <script>init()</script>
-</body>
-
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
 </html>
