@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_006" playerVersion="1.8.0" timeDependent="false" title="Practice 4">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/><link href="../common/dialog.css" userAgent=".*"/><link href="../common/clouds.css" userAgent=".*"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>8</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_1">
+					<correctResponse>
+						<value forIndex="0">What are you doing next Friday?</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_2-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_2-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_2">
+					<correctResponse>
+						<value forIndex="0">Would you like to go to a film?</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_3-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_3-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_3">
+					<correctResponse>
+						<value forIndex="0">Is there anything good on?</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_4-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_4-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_4">
+					<correctResponse>
+						<value forIndex="0">I had a quick look at the film guide</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_5-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_5-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_5">
+					<correctResponse>
+						<value forIndex="0">science fiction</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_6-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_6-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_6">
+					<correctResponse>
+						<value forIndex="0">comedies</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_7-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_7-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_7">
+					<correctResponse>
+						<value forIndex="0">thrillers</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_8-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_8-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_8">
+					<correctResponse>
+						<value forIndex="0">plot</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-practice">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><shape class="home-button"/></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y10_u24_p4_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y10_u24_p4_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Read and complete the text.</simpleText>
+			</div>
+</group>			
+<img class="colorline" fullscreenMode="magnific" id="dummy1_2" src="media/y9_u11_p2_001i.jpg">
+</img>			
+<group class="dialog" id="dummy1_3">
+	<div class="dialog-main">
+		<group class="orange dialog-left" id="dummy1_3_1">
+	<group class="lt" id="dummy1_3_1_1">
+	<div class="tick"/>
+		<group id="dummy1_3_1_1_1">
+	<textInteraction id="dummy1_3_1_1_1_1">
+<span><b>Harry:</b> </span><dragInteraction responseIdentifier="DRAG_RESPONSE_1" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_3_2">
+	<group class="rt" id="dummy1_3_2_1">
+	<div class="tick"/>
+		<group id="dummy1_3_2_1_1">
+	<simpleText id="dummy1_3_2_1_1_1">
+<b>Kate:</b> Nothing special, why?</simpleText>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_3_3">
+	<group class="lt" id="dummy1_3_3_1">
+	<div class="tick"/>
+		<group id="dummy1_3_3_1_1">
+	<textInteraction id="dummy1_3_3_1_1_1">
+<span><b>Harry:</b> </span><dragInteraction responseIdentifier="DRAG_RESPONSE_2" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_3_4">
+	<group class="rt" id="dummy1_3_4_1">
+	<div class="tick"/>
+		<group id="dummy1_3_4_1_1">
+	<textInteraction id="dummy1_3_4_1_1_1">
+<span><b>Kate:</b> I don't know, maybe. </span><dragInteraction responseIdentifier="DRAG_RESPONSE_3" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_3_5">
+	<group class="lt" id="dummy1_3_5_1">
+	<div class="tick"/>
+		<group id="dummy1_3_5_1_1">
+	<textInteraction id="dummy1_3_5_1_1_1">
+<span><b>Harry:</b> It depends what type of film you like. </span><dragInteraction responseIdentifier="DRAG_RESPONSE_4" sourcelistId="1"/><span> on the cinema website. I suppose you don't like horror films.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_3_6">
+	<group class="rt" id="dummy1_3_6_1">
+	<div class="tick"/>
+		<group id="dummy1_3_6_1_1">
+	<simpleText id="dummy1_3_6_1_1_1">
+<b>Kate:</b> No, I hate scary films with lots of red blood and shocking plots.</simpleText>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_3_7">
+	<group class="lt" id="dummy1_3_7_1">
+	<div class="tick"/>
+		<group id="dummy1_3_7_1_1">
+	<simpleText id="dummy1_3_7_1_1_1">
+<b>Harry:</b> I didn't think you'd like them. Nor do I. What about science fiction films? I really like a good science fiction film. I loved 'Star Wars'.</simpleText>
+</group>
+</group>
+</group>
+		<!-- cannot find module for dummy 'dummy8'!-->
+		<!-- cannot find module for dummy 'dummy9'!-->
+		<!-- cannot find module for dummy 'dummy10'!-->
+		<!-- cannot find module for dummy 'dummy11'!-->
+		<!-- cannot find module for dummy 'dummy12'!-->
+		<!-- cannot find module for dummy 'dummy13'!-->
+		<!-- cannot find module for dummy 'dummy14'!-->
+		<!-- cannot find module for dummy 'dummy15'!-->
+		<!-- cannot find module for dummy 'dummy16'!-->
+		<!-- cannot find module for dummy 'dummy17'!-->
+		<!-- cannot find module for dummy 'dummy18'!-->
+		<!-- cannot find module for dummy 'dummy19'!-->
+		<!-- cannot find module for dummy 'dummy20'!-->
+		<!-- cannot find module for dummy 'dummy21'!-->	
+		<!-- cannot find module for dummy 'dummy22'!-->
+		<!-- cannot find module for dummy 'dummy23'!-->
+		<!-- cannot find module for dummy 'dummy24'!-->
+		<!-- cannot find module for dummy 'dummy25'!-->
+		<!-- cannot find module for dummy 'dummy26'!-->
+		<!-- cannot find module for dummy 'dummy27'!-->
+		<!-- cannot find module for dummy 'dummy28'!-->
+		<!-- cannot find module for dummy 'dummy29'!-->
+		<!-- cannot find module for dummy 'dummy30'!-->
+		<!-- cannot find module for dummy 'dummy31'!-->
+		<!-- cannot find module for dummy 'dummy32'!-->
+		<!-- cannot find module for dummy 'dummy33'!-->
+		<!-- cannot find module for dummy 'dummy34'!-->
+		<!-- cannot find module for dummy 'dummy35'!-->
+	</div>
+</group>			
+<group class="slist_horizontal center top-margin20" id="dummy1_4">
+	<sourceList id="dummy1_4_1" moveElements="true" shuffle="true" sourcelistId="1">
+				<simpleSourceListItem alt="What are you doing next Friday?">What are you doing next Friday?</simpleSourceListItem>
+				<simpleSourceListItem alt="Would you like to go to a film?">Would you like to go to a film?</simpleSourceListItem>
+				<simpleSourceListItem alt="Is there anything good on?">Is there anything good on?</simpleSourceListItem>
+				<simpleSourceListItem alt="I had a quick look at the film guide">I had a quick look at the film guide</simpleSourceListItem>
+				<simpleSourceListItem alt="science fiction">science fiction</simpleSourceListItem>
+				<simpleSourceListItem alt="comedies">comedies</simpleSourceListItem>
+				<simpleSourceListItem alt="thrillers">thrillers</simpleSourceListItem>
+				<simpleSourceListItem alt="plot">plot</simpleSourceListItem>
+	</sourceList>
+</group>			
+<group class="dialog" id="dummy1_5">
+	<div class="dialog-main">
+		<group class="green dialog-right" id="dummy1_5_1">
+	<group class="rt" id="dummy1_5_1_1">
+	<div class="tick"/>
+		<group id="dummy1_5_1_1_1">
+	<textInteraction id="dummy1_5_1_1_1_1">
+<span><b>Kate:</b>  'Star Wars' was OK, but I think most </span><dragInteraction responseIdentifier="DRAG_RESPONSE_5" sourcelistId="1"/><span> films about the future are boring or have plots which are too complicated to understand properly, so I'm not so keen on Sci-Fi. I'd prefer something connected to the past or present rather than the future. That's why I prefer documentaries.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_5_2">
+	<group class="lt" id="dummy1_5_2_1">
+	<div class="tick"/>
+		<group id="dummy1_5_2_1_1">
+	<simpleText id="dummy1_5_2_1_1_1">
+<b>Harry:</b> OK, well they don't show many documentaries at the cinema and Sci-Fi films are out. How about romantic films?</simpleText>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_5_3">
+	<group class="rt" id="dummy1_5_3_1">
+	<div class="tick"/>
+		<group id="dummy1_5_3_1_1">
+	<textInteraction id="dummy1_5_3_1_1_1">
+<span><b>Kate:</b> Love stories are a bit boring, but romantic </span><dragInteraction responseIdentifier="DRAG_RESPONSE_6" sourcelistId="1"/><span> that make you laugh can be fun if the actors are OK. But I don't think there any good ones on at the moment. I haven't read any good reviews.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_5_4">
+	<group class="lt" id="dummy1_5_4_1">
+	<div class="tick"/>
+		<group id="dummy1_5_4_1_1">
+	<simpleText id="dummy1_5_4_1_1_1">
+<b>Harry:</b> Well, what shall we go and see?</simpleText>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_5_5">
+	<group class="rt" id="dummy1_5_5_1">
+	<div class="tick"/>
+		<group id="dummy1_5_5_1_1">
+	<textInteraction id="dummy1_5_5_1_1_1">
+<span><b>Kate:</b> Is there anything more exciting on? I like </span><dragInteraction responseIdentifier="DRAG_RESPONSE_7" sourcelistId="1"/><span>, especially those with a crime to solve. I really love the old Sherlock Holmes books. He's my favourite detective.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_5_6">
+	<group class="lt" id="dummy1_5_6_1">
+	<div class="tick"/>
+		<group id="dummy1_5_6_1_1">
+	<simpleText id="dummy1_5_6_1_1_1">
+<b>Harry:</b> There aren't any detective thrillers on, but we could go and watch the latest James Bond film. They are showing it at 7:30 on Friday.</simpleText>
+</group>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_5_7">
+	<group class="rt" id="dummy1_5_7_1">
+	<div class="tick"/>
+		<group id="dummy1_5_7_1_1">
+	<textInteraction id="dummy1_5_7_1_1_1">
+<span><b>Kate:</b> OK, that sounds good. James Bond films always have an exciting </span><dragInteraction responseIdentifier="DRAG_RESPONSE_8" sourcelistId="1"/><span>. I've been reading a James Bond book from the library. It's a really good thriller – I can't wait to turn the page to see what's going to happen next. I feel like watching a good action movie.</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_5_8">
+	<group class="lt" id="dummy1_5_8_1">
+	<div class="tick"/>
+		<group id="dummy1_5_8_1_1">
+	<simpleText id="dummy1_5_8_1_1_1">
+<b>Harry:</b> OK, see you on Friday.</simpleText>
+</group>
+</group>
+</group>
+		<!-- cannot find module for dummy 'dummy9'!-->
+		<!-- cannot find module for dummy 'dummy10'!-->
+		<!-- cannot find module for dummy 'dummy11'!-->
+		<!-- cannot find module for dummy 'dummy12'!-->
+		<!-- cannot find module for dummy 'dummy13'!-->
+		<!-- cannot find module for dummy 'dummy14'!-->
+		<!-- cannot find module for dummy 'dummy15'!-->
+		<!-- cannot find module for dummy 'dummy16'!-->
+		<!-- cannot find module for dummy 'dummy17'!-->
+		<!-- cannot find module for dummy 'dummy18'!-->
+		<!-- cannot find module for dummy 'dummy19'!-->
+		<!-- cannot find module for dummy 'dummy20'!-->
+		<!-- cannot find module for dummy 'dummy21'!-->	
+		<!-- cannot find module for dummy 'dummy22'!-->
+		<!-- cannot find module for dummy 'dummy23'!-->
+		<!-- cannot find module for dummy 'dummy24'!-->
+		<!-- cannot find module for dummy 'dummy25'!-->
+		<!-- cannot find module for dummy 'dummy26'!-->
+		<!-- cannot find module for dummy 'dummy27'!-->
+		<!-- cannot find module for dummy 'dummy28'!-->
+		<!-- cannot find module for dummy 'dummy29'!-->
+		<!-- cannot find module for dummy 'dummy30'!-->
+		<!-- cannot find module for dummy 'dummy31'!-->
+		<!-- cannot find module for dummy 'dummy32'!-->
+		<!-- cannot find module for dummy 'dummy33'!-->
+		<!-- cannot find module for dummy 'dummy34'!-->
+		<!-- cannot find module for dummy 'dummy35'!-->
+	</div>
+</group>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	   	<div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

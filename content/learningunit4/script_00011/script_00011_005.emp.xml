@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_005" playerVersion="1.8.0" timeDependent="false" title="Practice 3">
+	<styleDeclaration>
+		<link href="../common/default.css" userAgent=".*"/>
+		<link href="../common/android.css" userAgent=".*Android"/>
+		<link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/>
+	</styleDeclaration>
+	<variableProcessing template="default"/>
+	<outcomeDeclaration cardinality="single" identifier="DONE"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+	<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+	<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+	<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+	<outcomeDeclaration cardinality="single" identifier="RESET"/>
+	<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>6</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_10-DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_10-TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_10-LASTCHANGE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_10-PREVIOUS"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_10-LASTMISTAKEN"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_10-DONEHISTORY"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_10-DONECHANGES"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_10-MISTAKES"/>
+	<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_10">
+		<correctResponse>
+			<value forIndex="0">1549887614</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_5-DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_5-TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_5-LASTCHANGE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_5-PREVIOUS"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_5-LASTMISTAKEN"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_5-DONEHISTORY"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_5-DONECHANGES"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_5-MISTAKES"/>
+	<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_5">
+		<correctResponse>
+			<value forIndex="0">94929138</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_6-DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_6-TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_6-LASTCHANGE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_6-PREVIOUS"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_6-LASTMISTAKEN"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_6-DONEHISTORY"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_6-DONECHANGES"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_6-MISTAKES"/>
+	<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_6">
+		<correctResponse>
+			<value forIndex="0">1527542079</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_7-DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_7-TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_7-LASTCHANGE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_7-PREVIOUS"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_7-LASTMISTAKEN"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_7-DONEHISTORY"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_7-DONECHANGES"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_7-MISTAKES"/>
+	<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_7">
+		<correctResponse>
+			<value forIndex="0">97187719</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_8-DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_8-TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_8-LASTCHANGE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_8-PREVIOUS"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_8-LASTMISTAKEN"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_8-DONEHISTORY"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_8-DONECHANGES"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_8-MISTAKES"/>
+	<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_8">
+		<correctResponse>
+			<value forIndex="0">-1431613420</value>
+		</correctResponse>
+	</responseDeclaration>
+
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_9-DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_9-TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_9-LASTCHANGE"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_9-PREVIOUS"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_9-LASTMISTAKEN"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_9-DONEHISTORY"/>
+	<outcomeDeclaration cardinality="multiple" identifier="DROP_RESPONSE_9-DONECHANGES"/>
+	<outcomeDeclaration cardinality="single" identifier="DROP_RESPONSE_9-MISTAKES"/>
+	<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DROP_RESPONSE_9">
+		<correctResponse>
+			<value forIndex="0">-2124898351</value>
+		</correctResponse>
+	</responseDeclaration>
+	<itemBody>
+
+		<div class="page-practice">
+			<div class="page-header">
+				<div class="lesson-header-home-button">
+					<shape class="home-button"/>
+				</div>
+				<div class="lesson-header-page-title">
+					<info class="variable-page-title"/>
+				</div>
+				<div class="lesson-header-lesson-title">
+					<info class="variable-lesson-title"/>
+				</div>
+			</div>
+			<div class="page-content">
+				<group class="activity" id="dummy1">
+					<group class="rubric" id="dummy1_1">
+						<div class="rubric-cloud">
+							<audioPlayer class="player-normal" data="media/rub_y9_u11_p5_001au.mp3" id="dummy1_1_1">
+								<source src="media/rub_y9_u11_p5_001au.mp3" type="audio/mp4"/>
+							</audioPlayer>
+							<simpleText class="question" id="dummy1_1_2">
+What type of book or films does he like? Complete the sentences.</simpleText>
+						</div>
+					</group>
+					<group class="grid_2x50" id="dummy1_2">
+						<div class="t2x50">
+							<div class="w100perc">
+								<!-- <div class="w50perc">
+									<div class="inner">
+										<img class="colorline" fullscreenMode="magnific" id="dummy1_2_1" src="media/y9_u11_p5_001p.png" srcFullScreen="media/y9_u11_p5_001p_f.jpeg">
+										</img>
+									</div>
+								</div> -->
+								<div class="w100perc">
+									<div class="inner">
+										<group class="align-hl" id="dummy1_2_2">
+											<textInteraction id="dummy1_2_2_1">
+												<span>I love watching films at the weekend, but during the week I prefer reading a good book. I like fiction and non-fiction books. I enjoy reading </span>
+												<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_5" shuffle="true">
+													<inlineChoice identifier="94929138">crime</inlineChoice>
+													<inlineChoice identifier="3446503">poem</inlineChoice>
+													<inlineChoice identifier="1377702687">romance</inlineChoice>
+												</inlineChoiceInteraction>
+												<span> novels about detectives before I go to sleep. I don't like to put my book down until I know how the detective is going to solve the </span>
+												<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_6" shuffle="true">
+													<inlineChoice identifier="3373707">name</inlineChoice>
+													<inlineChoice identifier="1527542079">mystery</inlineChoice>
+													<inlineChoice identifier="3446503">poem</inlineChoice>
+												</inlineChoiceInteraction>
+												<span>.
+													<br/> At college, I have to learn lots of </span>
+												<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_7" shuffle="true">
+													<inlineChoice identifier="97187719">facts</inlineChoice>
+													<inlineChoice identifier="-862855404">fiction</inlineChoice>
+													<inlineChoice identifier="-2124898351">biographies</inlineChoice>
+												</inlineChoiceInteraction>
+												<span>, so I have to read a lot of </span>
+												<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_8" shuffle="true">
+													<inlineChoice identifier="-1081737434">fantasy</inlineChoice>
+													<inlineChoice identifier="-862855404">fiction</inlineChoice>
+													<inlineChoice identifier="-1431613420">non-fiction</inlineChoice>
+												</inlineChoiceInteraction>
+												<span> books. I'm studying history, so it's useful to read </span>
+												<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_9" shuffle="true">
+													<inlineChoice identifier="-2124898351">biographies</inlineChoice>
+													<inlineChoice identifier="-1431613420">non-fiction</inlineChoice>
+													<inlineChoice identifier="106841708">poems</inlineChoice>
+												</inlineChoiceInteraction>
+												<span> by famous people. Biographies are a fantastic way to gain </span>
+												<inlineChoiceInteraction responseIdentifier="DROP_RESPONSE_10" shuffle="true">
+													<inlineChoice identifier="1549887614">knowledge</inlineChoice>
+													<inlineChoice identifier="106841708">poems</inlineChoice>
+													<inlineChoice identifier="1377702687">romance</inlineChoice>
+												</inlineChoiceInteraction>
+												<span> of why people acted in the way that they did.</span>
+												<feedbacks>
+													<feedback>
+														<condition>
+															<and>
+																<propertyCondition property="wrong"/>
+																<not>
+																	<or>
+																		<propertyCondition property="allOk"/>
+																	</or>
+																</not>
+															</and>
+														</condition>
+														<action>
+															<showUrl href="media/wrong.mp3" type="narration">
+																<source src="media/wrong.mp3" type="audio/mp4"/>
+															</showUrl>
+														</action>
+													</feedback>
+													<feedback>
+														<condition>
+															<and>
+																<propertyCondition property="ok"/>
+																<not>
+																	<or>
+																		<propertyCondition property="allOk"/>
+																	</or>
+																</not>
+															</and>
+														</condition>
+														<action>
+															<showUrl href="media/ok.mp3" type="narration">
+																<source src="media/ok.mp3" type="audio/mp4"/>
+															</showUrl>
+														</action>
+													</feedback>
+													<feedback>
+														<condition>
+															<and>
+																<propertyCondition property="allOk"/>
+															</and>
+														</condition>
+														<action>
+															<showUrl href="media/allok.mp3" type="narration">
+																<source src="media/allok.mp3" type="audio/mp4"/>
+															</showUrl>
+														</action>
+													</feedback>
+												</feedbacks>
+											</textInteraction>
+										</group>
+									</div>
+								</div>
+							</div>
+						</div>
+					</group>
+				</group>
+				<!-- cannot find module for dummy 'dummy2'!-->
+				<!-- cannot find module for dummy 'dummy3'!-->
+				<!-- cannot find module for dummy 'dummy4'!-->
+				<!-- cannot find module for dummy 'dummy5'!-->
+				<!-- cannot find module for dummy 'dummy6'!-->
+				<!-- cannot find module for dummy 'dummy7'!-->
+				<!-- cannot find module for dummy 'dummy8'!-->
+				<!-- cannot find module for dummy 'dummy9'!-->
+				<!-- cannot find module for dummy 'dummy10'!-->
+			</div>
+		</div>
+		<div class="lesson-footer-buttons">
+			<markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+			<showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+			<resetButton class="lesson-footer-action-button reset" id="reset"/>
+		</div>
+		<div class="page-menu">
+			<div class="menu-button"/>
+			<report class="menu-content">
+				<prr>
+					<rd>
+						<div class="toc-line">
+							<link>
+								<div class="toc-line-table">
+									<info class="variable-page-title"/>
+								</div>
+							</link>
+						</div>
+					</rd>
+				</prr>
+			</report>
+		</div>
+	</itemBody>
+</assessmentItem>

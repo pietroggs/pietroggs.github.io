@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+	border: 0;
+    overflow: hidden;
+}
+
+.ia-container {
+    position: relative;
+    max-width: 900px;
+    max-height: 506px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+	background-color: #FFF;
+}
+
+svg {
+	width: 100%;
+    height: 100%;
+}
+
+text, tspan {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.source-list-element, .img-mini, .snd-mini, .gap[data-dropped], #reset {
+	cursor: pointer;
+	cursor: hand;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.source-list-element .element-bg {
+	fill: #e9e9ed;
+}
+.source-list-element.disabled, .gap.disabled {
+	cursor: default !important;
+}
+.source-list-element.active .element-bg {
+	fill: #87889d;
+	fill-opacity: 0.5;
+}
+.source-list-element.active-mobile .element-bg {
+	fill: #c3c3ce;
+}
+.source-list-element.active text{
+	fill: #FFF;
+}
+.source-list-element > rect {
+	fill-opacity: 1;
+}
+.source-list-element.hit-gap > rect, .source-list-element-in-gap > rect {
+	fill-opacity: 0;
+}
+
+.gap-target .gap-area {
+	fill: #536FC3;
+}
+
+.button .normal {
+	display: block;
+}
+.button.pressed .normal {
+	display: none;
+}
+.button .over {
+	display: none;
+}
+.button.pressed .over {
+	display: block;
+}
+.button.non-mobile .over {
+	display: none;
+}
+.button.non-mobile:hover .over {
+	display: block;
+}
+.button.non-mobile .normal {
+	display: block;
+}
+.button.non-mobile:hover .normal {
+	display: none;
+}
+
+
+#welldone, #reset, #preloader {
+	display: none;
+}

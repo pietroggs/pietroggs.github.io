@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentTest compilerVersion="3.3.2.188" gtm="true" identifer="Lesson 11 – What&amp;apos;s your favourite film?" playerVersion="1.8.0" title="What&amp;apos;s your favourite film?">
+				
+		<testView href="common/lesson.emp.xml"/>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+	<general>
+		<keyword><string>audience</string></keyword>
+		<keyword><string>biography</string></keyword>
+		<keyword><string>comedy</string></keyword>
+		<keyword><string>crime</string></keyword>
+		<keyword><string>documentary</string></keyword>
+		<keyword><string>plot</string></keyword>
+		<keyword><string>romantic</string></keyword>
+		<keyword><string>science fiction</string></keyword>
+		<keyword><string>thriller</string></keyword>
+		<keyword><string>favourite</string></keyword>
+		<keyword><string>film</string></keyword>
+		<keyword><string>book</string></keyword>
+		<keyword><string>genre</string></keyword>
+		<title><string>What's your favourite film?</string></title>
+	</general>
+	<educational>
+		<description><string>Learning goals:
+1. Practising vocabulary related to film and book genres
+2. Doing a role play about going to see a film</string></description>
+	</educational>
+</lom>
+	<styleDeclaration>
+		<link href="common/default.css" userAgent=".*"/>
+	</styleDeclaration>
+	<variableProcessing template="default"/>
+
+	<outcomeDeclaration cardinality="single" identifier="DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+	<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+	<outcomeDeclaration cardinality="single" identifier="RESET"/>
+	<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+
+	<testPart>
+		<assessmentSection>
+			<assessmentItemRef class="page_toc" href="script_00011/script_00011_000.emp.xml" identifier="ITEM_000"/>
+			<assessmentItemRef class="page_leadin" href="script_00011/script_00011_001.emp.xml" identifier="ITEM_001"/>
+			<assessmentItemRef class="page_maininput" href="script_00011/script_00011_002.emp.xml" identifier="ITEM_002"/>
+			<assessmentItemRef class="page_practice_visited" href="script_00011/script_00011_003.emp.xml" identifier="ITEM_003"/>
+			<assessmentItemRef class="page_practice_visited" href="script_00011/script_00011_004.emp.xml" identifier="ITEM_004"/>
+			<assessmentItemRef class="page_practice" href="script_00011/script_00011_005.emp.xml" identifier="ITEM_005"/>
+			<assessmentItemRef class="page_practice" href="script_00011/script_00011_006.emp.xml" identifier="ITEM_006"/>
+			<assessmentItemRef class="page_eta_visited" href="script_00011/script_00011_007.emp.xml" identifier="ITEM_007"/>
+			<assessmentItemRef class="page_report" href="script_00011/script_00011_008.emp.xml" identifier="ITEM_008"/>
+			<assessmentItemRef class="page_report" href="./newassets/script_1.emp.xml" identifier="ITEM_009"/>
+		</assessmentSection>
+	</testPart>
+</assessmentTest>

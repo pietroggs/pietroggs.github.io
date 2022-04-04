@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<class name="y9_u06_p7_001s" package="y9u06p7001s" />
+	<properties>
+		<width value="1" />
+		<height value="1" />
+	</properties>
+		<scripts>
+			<scriptfile src="y9_u06_p7_001s.js"/>
+			<scriptfile src="y9_u06_p7_001sEngine.js"/>
+		</scripts>
+	<libraries>
+			<library version="1.0.0.0" package="ydpjs">
+				<libraryfile src="ButtonDecorator.js"/>
+				<libraryfile src="Delegate.js"/>
+				<libraryfile src="Slider.js"/>
+			</library>
+	</libraries>
+</manifest>

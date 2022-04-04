@@ -1,0 +1,63 @@
+.task-card{
+	position:relative;
+}
+.task-card-flower{
+	background: url("task_card_flower.png") no-repeat scroll left top;
+	background-size: 105px 105px;
+	width:105px;
+	height:105px;
+	position:absolute;
+	top:-23px;
+	left:-23px;
+}
+.task-card-shadow{
+	-webkit-box-shadow: 2px 5px 0px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 5px 0px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 0px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+}
+.task-card-in{
+	background: url("task_card.png") no-repeat scroll left top;
+	background-color: #5EC7CB;
+	background-size: 388px 388px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;   
+    padding:20px;
+    border-bottom:#2E9FA3 2px solid;
+    border-right:#2E9FA3 2px solid;
+    overflow:hidden;
+    position:relative;
+}
+.task-card-in-in{
+	background: #FFF;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding:30px;
+	position:relative;
+	min-height:250px;
+}
+
+  @-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(360deg);}
+    to {-webkit-transform: rotate(0deg);}
+  }
+  @keyframes rotation {
+    from {-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);}
+    to {-moz-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);}
+  }
+.task-card-flower{
+	-webkit-animation-name: rotation;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+
+    animation-name: rotation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }

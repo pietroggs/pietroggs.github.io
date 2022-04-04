@@ -1,0 +1,42 @@
+.diary{
+	position:relative;
+}
+
+.diary-top{
+	background: url("diary_tl.jpg") no-repeat scroll left top;
+}
+.diary-top-in{
+	height: 50px;
+	background: url("diary_tr.jpg") no-repeat scroll right top;
+}
+
+
+.diary-center{
+	background: url("diary_cl.jpg") repeat-y scroll left top;)
+}
+.diary-center-in{
+	background: url("diary_cr.jpg") repeat-y scroll right top;)
+}
+
+
+.diary-bottom{
+	background: url("diary_bl.jpg") no-repeat scroll left top;
+}
+.diary-bottom-in{
+	height: 50px;
+	background: url("diary_br.jpg") no-repeat scroll right top;
+}
+
+
+.diary-center  > .inner{
+	padding:20px 120px 20px 80px;
+}
+
+.diary-pen{
+	height: 417px;
+	width: 172px;
+	background: url("diary_pen.png") no-repeat scroll right top;
+	position:absolute;
+	right:-20px;
+	top:-20px;
+}

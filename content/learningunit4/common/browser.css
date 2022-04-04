@@ -1,0 +1,42 @@
+.browser{
+}
+.browser-www{
+    color: #888;
+    display: block;
+    font-size: 16px;
+    height: 20px;
+    overflow: hidden;
+    padding-left: 78px;
+    margin-right: 140px;
+    padding-top: 24px;
+}
+
+.browser-top{
+	background: url("browser_tl.png") no-repeat scroll left top;
+}
+.browser-top-in{
+	height: 60px;
+	background: url("browser_tr.png") no-repeat scroll right top;
+}
+
+
+.browser-center{
+	background: url("browser_cl.png") repeat-y scroll left top;)
+}
+.browser-center-in{
+	background: url("browser_cr.png") repeat-y scroll right top;)
+}
+
+
+.browser-bottom{
+	background: url("browser_bl.png") no-repeat scroll left top;
+}
+.browser-bottom-in{
+	height: 20px;
+	background: url("browser_br.png") no-repeat scroll right top;
+}
+
+
+.browser-center  > .inner{
+	padding:1em 2em 1em 1em;
+}

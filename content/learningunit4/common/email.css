@@ -1,0 +1,61 @@
+.email{
+}
+.email-from{
+    color: #888;
+    display: block;
+    font-size: 16px;
+    height: 20px;
+    overflow: hidden;
+    padding-left: 87px;
+    margin-right: 140px;
+    padding-top: 53px;
+}
+.email-to{
+    color: #888;
+    display: block;
+    font-size: 16px;
+    height: 20px;
+    overflow: hidden;
+    padding-left: 87px;
+    margin-right: 140px;
+    padding-top: 7px;
+}
+.email-subject{
+    color: #888;
+    display: block;
+    font-size: 16px;
+    height: 20px;
+    overflow: hidden;
+    padding-left: 87px;
+    margin-right: 140px;
+    padding-top: 7px;
+}
+.email-top{
+	background: url("email_tl.png") no-repeat scroll left top;
+}
+.email-top-in{
+	height: 140px;
+	background: url("email_tr.png") no-repeat scroll right top;
+}
+
+
+.email-center{
+	background: url("email_cl.png") repeat-y scroll left top;)
+}
+.email-center-in{
+	background: url("email_cr.png") repeat-y scroll right top;)
+}
+
+
+.email-bottom{
+	background: url("email_bl.png") no-repeat scroll left top;
+}
+.email-bottom-in{
+	height: 20px;
+	background: url("email_br.png") no-repeat scroll right top;
+}
+
+
+.email-center  > .inner{
+	padding:1em 2em 0 1em;
+}
