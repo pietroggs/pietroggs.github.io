@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+:root {
+    --white: #fff;
+    --vivo-pink: #e13c7d;
+    --vivo-purple: #c670ff;
+    --vivo-purple-dark-1: #66008f;
+    --vivo-purple-dark-2: #461e5f;
+    --vivo-purple-dark-3: #660091;
+}
+
+@font-face {
+    font-family: VivoTypeBld;
+    src: url('../fonts/VivoType-Bold.woff');
+}
+
+@font-face {
+    font-family: VivoTypeReg;
+    src: url('../fonts/VivoType-Regular.woff');
+}
+
+@font-face {
+    font-family: VivoType Lgt;
+    src: url('../fonts/VivoType-Light.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*No text select*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--vivo-purple-dark-1);
+    font-family: VivoTypeReg, Arial, Helvetica, sans-serif;
+}
+
+div.topo {
+    position: fixed;
+    right: 1vw;
+    bottom: 1vw;
+    width: 6vw;
+    height: 3vw;
+    cursor: pointer;
+    background: url(../images/botao_topo.png) 50% 50% no-repeat;
+    background-size: contain;
+}

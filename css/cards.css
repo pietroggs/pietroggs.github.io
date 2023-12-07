@@ -1,0 +1,366 @@
+/* --- GENERAL ----*/
+
+.abs {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.divImg {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding: 10vw 0 7vw 0;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 4vw;
+    color: var(--white);
+    text-align: center;
+    font-family: VivoTypeBld, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    width: 90%;
+    font-size: 3.2vw;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: .095vw;
+    font-family: VivoTypeBld, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    width: 90%;
+    font-size: 2.2vw;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: .05vw;
+    font-family: VivoTypeBld, Arial, Helvetica, sans-serif;
+}
+
+p {
+    width: 100%;
+    font-size: 1.8vw;
+    text-align: center;
+    font-family: VivoTypeReg, Arial, Helvetica, sans-serif;
+}
+
+.faixa {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 9vw;
+}
+
+.faixa.purple {
+    background-color: var(--vivo-purple-dark-3);
+}
+
+.faixa.pink {
+    filter: brightness(1.12);
+    background-color: #c31e59;
+}
+
+/* --- CARDS ----*/
+
+/* #region CARD 00 */
+#card_00 {
+    padding: 0;
+    height: 100%;
+    background-image: url(../images/card_00/bg.png);
+    background-size: cover;
+}
+
+#card_00 .retranca {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 4.2vw;
+    height: auto;
+}
+
+#card_00 .box_purple {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 8vw;
+    left: 5%;
+    width: 46vw;
+    height: 14vw;
+    filter: opacity(0.85);
+    background-image: url(../images/card_00/box_purple.png);
+    background-position: bottom center;
+}
+
+#card_00 .box_purple h1 {
+    width: 83%;
+}
+
+/* #endregion */
+
+/* #region CARD 01 */
+#card_01 {
+    gap: 4vw;
+    height: auto;
+    background-image: url(../images/bg_purple.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#card_01 .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    width: 66vw;
+}
+
+#card_01 .container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9vw;
+    width: 90vw;
+}
+
+#card_01 img {
+    width: 32%;
+    height: auto;
+}
+
+/* #endregion */
+
+/* #region CARD 02 */
+#card_02 {
+    gap: 5vw;
+    height: auto;
+    background-image: url(../images/bg_pink.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#card_02 img {
+    width: 60vw;
+    height: auto;
+}
+
+#card_02 .container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    width: 90%;
+}
+
+#card_02 .container1 .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    width: 32vw;
+    height: 26vw;
+    background-image: url(../images/card_02/bg_box.png);
+}
+
+#card_02 .container1 .boxes p {
+    width: 85%;
+    font-size: 1.6vw;
+}
+
+#card_02 .container1 .boxes h3 {
+    margin-top: 4vw;
+}
+
+/* #endregion */
+
+/* #region CARD 03 */
+#card_03 {
+    gap: 5vw;
+    height: auto;
+    background-image: url(../images/bg_purple.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#card_03 .container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    width: 90%;
+}
+
+#card_03 .container1 .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    width: 32vw;
+    height: 26vw;
+    background-image: url(../images/card_03/bg_box.png);
+}
+
+#card_03 .container1 .boxes p {
+    width: 80%;
+    font-size: 1.6vw;
+}
+
+#card_03 .container1 .boxes h3 {
+    margin-top: 4vw;
+}
+
+/* #endregion */
+
+/* #region CARD 04 */
+#card_04 {
+    gap: 5vw;
+    height: auto;
+    background-image: url(../images/bg_pink.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#card_04 img {
+    width: 60vw;
+    height: auto;
+}
+
+#card_04 .container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    width: 90%;
+}
+
+#card_04 .container1 .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    width: 32vw;
+    height: 22vw;
+    background-image: url(../images/card_04/bg_box.png);
+}
+
+#card_04 .container1 .boxes p {
+    width: 84%;
+    font-size: 1.6vw;
+}
+
+#card_04 .container1 .boxes h3 {
+    margin-top: 4vw;
+}
+
+/* #endregion */
+
+/* #region CARD 05 */
+#card_05 {
+    gap: 5vw;
+    height: auto;
+    background-image: url(../images/bg_purple.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#card_05 .container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    width: 90%;
+}
+
+#card_05 .container1 .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    width: 32vw;
+    height: 26vw;
+    background-image: url(../images/card_05/bg_box.png);
+}
+
+#card_05 .container1 .boxes p {
+    width: 81%;
+    font-size: 1.6vw;
+}
+
+#card_05 .container1 .boxes span {
+    display: block;
+}
+
+#card_05 .container1 .boxes h3 {
+    margin-top: 4vw;
+}
+
+/* #endregion */
+
+/* #region CARD 06 */
+#card_06 {
+    gap: 4vw;
+    height: auto;
+    background-image: url(../images/bg_pink.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#card_06 .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65vw;
+}
+
+#card_06 img {
+    width: 65vw;
+    height: auto;
+    filter: drop-shadow(-5px 4px 15px rgba(0, 0, 0, .5));
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#footer img {
+    width: 60vw;
+    height: auto;
+    margin-top: 8vw;
+}
+
+/* #endregion */
