@@ -16,7 +16,7 @@
    <!-- ** Change History ** -->
    <!-- ******************** -->
    <xsd:annotation>
-      <xsd:documentation xml:lang="en">DRAFT XSD for IMS Content Packaging version 1.1 DRAFT</xsd:documentation>
+      <xsd:documentation xml:lang="pt-BR">DRAFT XSD for IMS Content Packaging version 1.1 DRAFT</xsd:documentation>
       <xsd:documentation> Copyright (c) 2001 IMS GLC, Inc. </xsd:documentation>
       <xsd:documentation>2000-04-21, Adjustments by T.D. Wason from CP 1.0.</xsd:documentation>
       <xsd:documentation>2001-02-22, T.D.Wason: Modify for 2000-10-24 XML-Schema version.  Modified to support extension.</xsd:documentation>
