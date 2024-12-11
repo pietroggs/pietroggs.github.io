@@ -1,0 +1,28 @@
+main {
+  background-color: white;
+  width: 100vw;
+  height: 238vw;
+  overflow: hidden;
+  transform-origin: top left;
+  
+  .bg {
+    position: absolute;
+    width: 178vw;
+    left: -29%;
+    top: -6vw;
+  }
+
+  .retranca {
+    position: absolute;
+    width: 5vw;
+    top: 0;
+    left: 4%;
+  }
+
+  .retranca2 {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    width: 28vw;
+  }
+}

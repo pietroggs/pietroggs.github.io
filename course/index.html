@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Sinergia Fixa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/geral.css">
+</head>
+
+<body>
+  <main>
+    <img src="assets/Ativo1.svg" alt="" class="bg">
+    <img src="assets/Ativo2.svg" alt="" class="retranca">
+    <img src="assets/Ativo3.png" alt="" class="retranca2">
+  </main>
+
+  <!-- libs -->
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/scorm_api.js"></script>
+  <script src="js/libs/gsap.min.js"></script>
+  <script src="js/libs/scale_scorm.js"></script>
+
+  <!-- COURSE -->
+  <script src="js/main.js"></script>
+  <script src="js/zoom.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const main = document.querySelector('main');
+      initCustomZoom(main);
+    });
+
+  </script>
+
+</body>
+
+</html>
