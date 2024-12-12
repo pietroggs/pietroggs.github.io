@@ -45,11 +45,7 @@ html {
 body {
   font-family: 'vivo';
   color: white;
-  /* overflow-x: hidden; */
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* img {
@@ -173,4 +169,20 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--verde) !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-animation {
+  animation: float 2s ease-in-out infinite;
 }

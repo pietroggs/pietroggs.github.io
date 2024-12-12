@@ -5,17 +5,17 @@ document.addEventListener('gesturestart', (e) => {
 
 function initCustomZoom(mainElement) {
     let scale = 1;
-    const SENSITIVITY = 0.0008; // Even more reduced sensitivity
+    const DESKTOP_SENSITIVITY = 0.0008;
+    const MOBILE_SENSITIVITY = 0.002; // Higher sensitivity for mobile
     let currentScale = 1;
     
     // Desktop zoom with smooth transition
     document.addEventListener('wheel', (e) => {
         if (e.ctrlKey) {
             e.preventDefault();
-            scale += e.deltaY * -SENSITIVITY;
+            scale += e.deltaY * -DESKTOP_SENSITIVITY;
             scale = Math.min(Math.max(1, scale), 4);
             
-            // Smooth transition
             currentScale = scale;
             mainElement.style.transition = 'transform 0.1s ease-out';
             mainElement.style.transform = `scale(${currentScale})`;
@@ -43,17 +43,15 @@ function initCustomZoom(mainElement) {
             
             const difference = newDistance - touchDistance;
             touchDistance = newDistance;
-            scale += difference * SENSITIVITY;
+            scale += difference * MOBILE_SENSITIVITY;
             scale = Math.min(Math.max(1, scale), 4);
             
-            // Smooth transition
             currentScale = scale;
             mainElement.style.transition = 'transform 0.1s ease-out';
             mainElement.style.transform = `scale(${currentScale})`;
         }
     }, { passive: false });
 
-    // Reset transition when interaction ends
     document.addEventListener('touchend', () => {
         mainElement.style.transition = '';
     });
