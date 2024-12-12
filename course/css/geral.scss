@@ -29,6 +29,18 @@ main {
     width: 35vw;
   }
 
+  .clickfull {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10vw;
+    height: 10vw;
+    z-index: 9;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
   .title {
     position: absolute;
     color: var(--roxo);
@@ -65,13 +77,19 @@ main {
       width: 55%;
       font-size: 2.3vw;
     }
+
+    .port {
+      display: none;
+    }
   }
 
   .pins {
+
     img {
       position: absolute;
       cursor: pointer;
       transition: opacity 0.3s ease;
+      z-index: 9;
     }
 
     #id1 {
@@ -148,9 +166,10 @@ main {
     }
 
     .d2 {
-      top: 96vw;
-      left: 38vw;
-      width: 36vw;
+      top: 90vw;
+      left: 40vw;
+      width: 34vw;
+      z-index: 1;
     }
 
     .d3 {
@@ -225,19 +244,56 @@ main {
 }
 
 @media (orientation: portrait) and (max-width: 935px) {
-  .mask {
-    img {
-      width: 90vw;
+  main {
+    .retranca {
+      width: 7vw;
     }
 
-    .holder{
-      width: 90vw;
+    .retranca2 {
+      left: 58%;
+      width: 42vw;
     }
 
-    .exit {
-      width: 15vw;
-      height: 15vw;  
+    .clickfull {
+      width: 12vw;
+      height: 12vw;
+    }
+
+    .title {
+      top: 22vw;
+      line-height: 30px;
+    }
+
+    .pinkbox {
+      top: 32vw;
+
+      .land {
+        display: none;
+      }
+
+      .port {
+        display: block !important;
+      }
+
+      p {
+        font-size: 2.7vw;
+      }
+    }
+
+    .mask {
+      img {
+        width: 90vw;
+      }
+
+      .holder {
+        width: 90vw;
+      }
+
+      .exit {
+        width: 15vw;
+        height: 15vw;
+      }
     }
   }
-  
+
 }

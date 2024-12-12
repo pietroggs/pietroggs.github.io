@@ -39,7 +39,7 @@ const createPopup = (pinNumber) => {
     exit.onclick = exitFunc
     holder.appendChild(exit);
 
-    document.body.appendChild(mask);
+    main.appendChild(mask);
 
     // Initial state
     gsap.set(popup, {
@@ -93,6 +93,55 @@ const initPins = () => {
         });
     });
 }
+
+//fullscreen, não fui eu que fiz, se der pau reclamar com a Aline
+var fsButton = document.querySelector('.clickfull');
+
+// #region FULLSCREEN!
+document.fullscreenEnabled =
+    document.fullscreenEnabled ||
+    document.mozFullScreenEnabled ||
+    document.documentElement.webkitRequestFullScreen;
+
+function requestFullscreen(element) {
+    if (element.requestFullscreen) {
+        element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+}
+
+fsButton.addEventListener('click', (e) => {
+    if (screenfull.isEnabled) {
+        screenfull.toggle();
+
+        if (!screenfull.isFullscreen) {
+            e.target.classList.add("active");
+        } else {
+            e.target.classList.remove("active");
+        }
+    }
+});
+// #endregion
+
+// #region IOS Detection
+function iOS() {
+    return [
+        'iPad Simulator',
+        'iPhone Simulator',
+        'iPod Simulator',
+        'iPad',
+        'iPhone',
+        'iPod'
+    ].includes(navigator.platform)
+        // iPad on iOS 13 detection
+        || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+
+!!iOS() ? fsButton.style.display = 'none' : fsButton.style.display = 'block';
+// #endregion
 const init = () => {
     console.log('%cInit', 'color: blue');
     sco.init();

@@ -26,6 +26,17 @@ main .retranca2 {
   left: 65%;
   width: 35vw;
 }
+main .clickfull {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10vw;
+  height: 10vw;
+  z-index: 9;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
 main .title {
   position: absolute;
   color: var(--roxo);
@@ -58,10 +69,14 @@ main .pinkbox p {
   width: 55%;
   font-size: 2.3vw;
 }
+main .pinkbox .port {
+  display: none;
+}
 main .pins img {
   position: absolute;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  z-index: 9;
 }
 main .pins #id1 {
   width: 28vw;
@@ -122,9 +137,10 @@ main .decor .d1 {
   left: 43vw;
 }
 main .decor .d2 {
-  top: 96vw;
-  left: 38vw;
-  width: 36vw;
+  top: 90vw;
+  left: 40vw;
+  width: 34vw;
+  z-index: 1;
 }
 main .decor .d3 {
   width: 15vw;
@@ -186,13 +202,40 @@ main .footer {
 }
 
 @media (orientation: portrait) and (max-width: 935px) {
-  .mask img {
+  main .retranca {
+    width: 7vw;
+  }
+  main .retranca2 {
+    left: 58%;
+    width: 42vw;
+  }
+  main .clickfull {
+    width: 12vw;
+    height: 12vw;
+  }
+  main .title {
+    top: 22vw;
+    line-height: 30px;
+  }
+  main .pinkbox {
+    top: 32vw;
+  }
+  main .pinkbox .land {
+    display: none;
+  }
+  main .pinkbox .port {
+    display: block !important;
+  }
+  main .pinkbox p {
+    font-size: 2.7vw;
+  }
+  main .mask img {
     width: 90vw;
   }
-  .mask .holder {
+  main .mask .holder {
     width: 90vw;
   }
-  .mask .exit {
+  main .mask .exit {
     width: 15vw;
     height: 15vw;
   }
